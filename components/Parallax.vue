@@ -7,7 +7,7 @@
 <style>
   .parallax_box {
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     position: relative;
   }
 
