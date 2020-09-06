@@ -67,6 +67,11 @@ html {
   background-color: rgb(41,41,48);
 }
 
+.masterpiece {
+  min-height: 100vh;
+  background-color: rgb(85,149,222);
+}
+
 .title {
   font-family:
     'Quicksand',
