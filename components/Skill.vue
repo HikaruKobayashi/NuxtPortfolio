@@ -1,5 +1,5 @@
 <template>
-  <div class='container skill'>
+  <div class='skill'>
     <div class='numbers_card skills'>
       <span>7</span>
       <p>SKILL</p>
