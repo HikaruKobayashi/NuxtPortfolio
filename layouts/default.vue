@@ -2,6 +2,7 @@
   <div>
     <Header />
     <Introduction />
+    <Overview />
     <Nuxt />
   </div>
 </template>
@@ -9,6 +10,7 @@
 <script>
 import Header from '~/components/Header.vue'
 import Introduction from '~/components/Introduction.vue'
+import Overview from '~/components/Overview.vue'
 
 export default {
   name: 'sample',
