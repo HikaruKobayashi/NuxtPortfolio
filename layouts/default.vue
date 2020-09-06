@@ -3,7 +3,7 @@
     <Header />
     <Introduction />
     <Overview />
-    <Nuxt />
+    <Skill />
   </div>
 </template>
 
@@ -11,6 +11,7 @@
 import Header from '~/components/Header.vue'
 import Introduction from '~/components/Introduction.vue'
 import Overview from '~/components/Overview.vue'
+import Skill from '~/components/Skill.vue'
 
 export default {
   name: 'sample',

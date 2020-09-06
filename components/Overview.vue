@@ -1,7 +1,5 @@
 <template>
   <div class='container overview'>
-    <div>
-    </div>
   </div>
 </template>
 
