@@ -181,3 +181,7 @@ html {
  -webkit-flex-direction: row;
  -ms-flex-direction: row;
 }
+
+.introduce {
+  background-color: rgba(0,0,0,.15);
+}
