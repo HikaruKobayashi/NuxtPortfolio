@@ -64,6 +64,7 @@ html {
 
 .introduction {
   height: 100vh;
+  background-color: rgb(22,23,34);
 }
 
 .introduce {
@@ -218,6 +219,7 @@ html {
 }
 
 .site-title {
+  padding: 50px;
   text-align: center;
   position: absolute;
   top: 50%;
@@ -225,24 +227,40 @@ html {
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+  /* background-image: url('~@/assets/img/.png'); */
+  z-index: 5;
+  background: linear-gradient(rgb(52,62,98), rgb(24,26,41));
+  color: rgb(255, 255, 255);
 }
 
 .introduction_img {
   width: 25%;
   max-width: 25%;
   height: auto;
+  z-index: 1;
 }
 
-.nature {
-  margin: 2% 0 0 10%;
+.work-environment {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  transform: translate(-70%, -30%);
+  -webkit-transform: translate(-70%, -30%);
+  -ms-transform: translate(-70%, -30%);
 }
-.natural {
-  margin: 0 0 0 60%;
+.swimming {
+  position: absolute;
+  top: 45%;
+  left: 70%;
+  transform: translate(-30%, -70%);
+  -webkit-transform: translate(-30%, -70%);
+  -ms-transform: translate(-30%, -70%);
 }
-.nature-2 {
-  margin: 0 0 0 20%;
+.dive {
+  position: absolute;
+  top: 60%;
+  left: 45%;
+  transform: translate(-45%, 30%);
+  -webkit-transform: translate(-45%, 30%);
+  -ms-transform: translate(-45%, 30%);
 }
-/* .img_container {
-  width: 100%;
-  height: 30vh;
-} */
