@@ -24,196 +24,6 @@ html {
   margin: 0;
 }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
-}
-
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.introduction {
-  height: 100vh;
-  background-color: rgb(22,23,34);
-  position: relative;
-}
-
-.introduce {
-  height: 100vh;
-  background-color: rgba(0,0,0,.15);
-}
-
-.overview {
-  min-height: 50vh;
-  background-color: rgb(41,41,48);
-}
-
-.masterpiece {
-  min-height: 100vh;
-  background-color: rgb(85,149,222);
-  color: rgb(255, 255, 255);
-}
-
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
-
-.menu {
-  list-style: none;
-  padding: 0;
-  background-color: rgb(51, 51, 51);
-}
-
-#nav-drawer {
-  position: relative;
-}
-
-.nav-unshown {
-  display:none;
-}
-
-#nav-open {
-  display: inline-block;
-  width: 30px;
-  height: 22px;
-  vertical-align: middle;
-}
-
-#nav-open span, #nav-open span:before, #nav-open span:after {
-  position: absolute;
-  height: 3px;
-  width: 25px;
-  border-radius: 3px;
-  background: #555;
-  display: block;
-  content: '';
-  cursor: pointer;
-}
-#nav-open span:before {
-  bottom: -8px;
-}
-#nav-open span:after {
-  bottom: -16px;
-}
-
-#nav-close {
-  display: none;
-  position: fixed;
-  z-index: 99;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: black;
-  opacity: 0;
-  transition: .3s ease-in-out;
-}
-
-#nav-content {
-  overflow: auto;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  width: 90%;
-  max-width: 300px;
-  height: 100%;
-  background: #fff;
-  transition: .3s ease-in-out;
-  -webkit-transform: translateX(-105%);
-  transform: translateX(-105%);
-}
-
-#nav-input:checked ~ #nav-close {
-  display: block;
-  opacity: .5;
-}
-
-#nav-input:checked ~ #nav-content {
-  -webkit-transform: translateX(0%);
-  transform: translateX(0%);
-  box-shadow: 6px 0 25px rgba(0,0,0,.15);
-}
-
-.header-logo-menu{
- display: flex;
- display: -moz-flex;
- display: -o-flex;
- display: -webkit-flex;
- display: -ms-flex;
- flex-direction: row;
- -moz-flex-direction: row;
- -o-flex-direction: row;
- -webkit-flex-direction: row;
- -ms-flex-direction: row;
-}
-
-.overview {
-  color: rgb(255, 255, 255);
-  text-align: center;
-}
-
-.skill {
-  height: 100vh;
-  font-weight: bold;
-}
-
 .site-title {
   padding: 80px;
   text-align: center;
@@ -304,6 +114,198 @@ html {
 .numbers_card {
   font-size: 36px;/* IE8以下とAndroid4.3以下用フォールバック */
   font-size: calc(2.4rem + ((1vw - 0.64rem) * 2.1429));/* 24px~36pxで可変*/
+}
+
+.button--green {
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid #3b8070;
+  color: #3b8070;
+  text-decoration: none;
+  padding: 10px 30px;
+}
+
+.button--green:hover {
+  color: #fff;
+  background-color: #3b8070;
+}
+
+.button--grey {
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid #35495e;
+  color: #35495e;
+  text-decoration: none;
+  padding: 10px 30px;
+  margin-left: 15px;
+}
+
+.button--grey:hover {
+  color: #fff;
+  background-color: #35495e;
+}
+
+.container {
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.introduction {
+  height: 100vh;
+  background-color: rgb(22,23,34);
+}
+
+.introduce {
+  height: 100vh;
+  background-color: rgba(0,0,0,.15);
+}
+
+.overview {
+  min-height: 50vh;
+  background-color: rgb(41,41,48);
+}
+
+.masterpiece {
+  min-height: 100vh;
+  background-color: rgb(85,149,222);
+  color: rgb(255, 255, 255);
+}
+
+.title {
+  font-family:
+    'Quicksand',
+    'Source Sans Pro',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    'Helvetica Neue',
+    Arial,
+    sans-serif;
+  display: block;
+  font-weight: 300;
+  font-size: 100px;
+  color: #35495e;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  font-weight: 300;
+  font-size: 42px;
+  color: #526488;
+  word-spacing: 5px;
+  padding-bottom: 15px;
+}
+
+.links {
+  padding-top: 15px;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  background-color: rgb(51, 51, 51);
+}
+
+#nav-drawer {
+  position: relative;
+  padding: 10px;
+}
+
+.nav-unshown {
+  display:none;
+}
+
+#nav-open {
+  display: inline-block;
+  width: 30px;
+  height: 22px;
+  vertical-align: middle;
+}
+
+#nav-open span, #nav-open span:before, #nav-open span:after {
+  position: absolute;
+  height: 3px;
+  width: 25px;
+  border-radius: 3px;
+  background: rgb(255, 255, 255);
+  display: block;
+  content: '';
+  cursor: pointer;
+  z-index: 50;
+}
+#nav-open span:before {
+  bottom: -8px;
+}
+#nav-open span:after {
+  bottom: -16px;
+}
+
+#nav-close {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0;
+  transition: .3s ease-in-out;
+}
+
+#nav-content {
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 90%;
+  max-width: 300px;
+  height: 100%;
+  background: #fff;
+  transition: .3s ease-in-out;
+  -webkit-transform: translateX(-105%);
+  transform: translateX(-105%);
+}
+
+#nav-input:checked ~ #nav-close {
+  display: block;
+  opacity: .5;
+}
+
+#nav-input:checked ~ #nav-content {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+  box-shadow: 6px 0 25px rgba(0,0,0,.15);
+}
+
+.header-logo-menu{
+  display: flex;
+  display: -moz-flex;
+  display: -o-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  flex-direction: row;
+  -moz-flex-direction: row;
+  -o-flex-direction: row;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  position: fixed;
+}
+
+.overview {
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.skill {
+  height: 100vh;
+  font-weight: bold;
 }
 
 @media (min-width: 1200px) {/* 1200px以上*/
