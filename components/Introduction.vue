@@ -13,6 +13,12 @@
     <div>
       <img src='@/assets/img/dive.jpg' class='introduction_img dive' />
     </div>
+    <div>
+      <img src='@/assets/img/outdoors.png' class='introduction_img outdoors' />
+    </div>
+    <div>
+      <img src='@/assets/img/riverbank.png' class='introduction_img river_bank' />
+    </div>
   </div>
 </template>
 

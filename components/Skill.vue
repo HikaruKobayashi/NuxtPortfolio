@@ -12,6 +12,9 @@
       <span>550</span>
       <p>COMMIT</p>
     </div>
+    <div class='skill_img_container'>
+      <img src='@/assets/img/golden_mac_acne.png' class='skill_img' />
+    </div>
   </div>
 </template>
 
