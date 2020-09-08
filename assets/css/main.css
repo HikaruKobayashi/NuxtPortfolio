@@ -51,14 +51,8 @@ html {
   position: relative;
 }
 .skill_img {
-  width: 50%;
-  max-width: 50%;
-  position: absolute;
-  top: 45%;
-  left: 60%;
-  transform: translate(-30%, -60%);
-  -webkit-transform: translate(-30%, -60%);
-  -ms-transform: translate(-30%, -60%);
+  width: 100px;
+  height: 100px;
 }
 
 .work-environment {
@@ -208,7 +202,6 @@ html {
 .menu {
   list-style: none;
   padding: 0;
-  background-color: rgb(51, 51, 51);
 }
 
 #nav-drawer {
@@ -311,6 +304,20 @@ html {
 .masterpiece_title {
   text-align: center;
 }
+
+.fadeOut {
+  animation: fadeOut 2s;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 @media (min-width: 1200px) {/* 1200px以上*/
   .numbers_card {
       font-size: 3.6rem;/* 36px*/
