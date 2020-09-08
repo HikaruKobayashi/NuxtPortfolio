@@ -4,19 +4,19 @@
       <h1>Portfolio</h1>
       <span>This page is a my self-introduction site.</span>
     </div>
-    <div :class="{fadeOut: visible}">
+    <div class='introduction_img_fade_out' v-scroll="handleScrollFadeOut">
       <img src='@/assets/img/work-environment.jpg' class='introduction_img work-environment' />
     </div>
-    <div :class="{fadeOut: visible}">
+    <div class='introduction_img_fade_out' v-scroll="handleScrollFadeOut">
       <img src='@/assets/img/swimming.jpg' class='introduction_img swimming' />
     </div>
-    <div :class="{fadeOut: visible}">
+    <div class='introduction_img_fade_out' v-scroll="handleScrollFadeOut">
       <img src='@/assets/img/dive.jpg' class='introduction_img dive' />
     </div>
-    <div :class="{fadeOut: visible}">
+    <div class='introduction_img_fade_out' v-scroll="handleScrollFadeOut">
       <img src='@/assets/img/outdoors.png' class='introduction_img outdoors' />
     </div>
-    <div :class="{fadeOut: visible}">
+    <div class='introduction_img_fade_out' v-scroll="handleScrollFadeOut">
       <img src='@/assets/img/riverbank.png' class='introduction_img river_bank' />
     </div>
   </div>
@@ -26,20 +26,16 @@
 
 <script>
 export default {
-  data() {
-    return {
-      visible: false
-    };
-  },
-  created() {
-    window.addEventListener('scroll', this.handleScroll);
-  },
   methods: {
-    handleScroll() {
-      if (!this.visible) {
-        const top = this.$el.getBoundingClientRect().top;
-        this.visible = top < window.innerHeight + 100;
+    handleScrollFadeOut: function(evt, el) {
+      console.log(window.scrollY);
+      if (window.scrollY > 50) {
+        el.setAttribute(
+          "style",
+          "opacity: 0; transform: translate3d(0, -10px, 0)"
+        )
       }
+      return window.scrollY > 100;
     }
   }
 }

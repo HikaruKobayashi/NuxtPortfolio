@@ -105,6 +105,11 @@ html {
   padding: 10px;
 }
 
+.overview_content_fade_in {
+  opacity: 0;
+  transition: 1.5s all cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
 .numbers_card {
   font-size: 36px;/* IE8以下とAndroid4.3以下用フォールバック */
   font-size: calc(2.4rem + ((1vw - 0.64rem) * 2.1429));/* 24px~36pxで可変*/
@@ -305,26 +310,18 @@ html {
   text-align: center;
 }
 
-.fadeOut {
-  animation: fadeOut 2s;
+.introduction_img_fade_out {
+  opacity: 1;
+  transition: 2s all cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@media (min-width: 1200px) {/* 1200px以上*/
+@media (min-width: 1200px) {
   .numbers_card {
-      font-size: 3.6rem;/* 36px*/
+      font-size: 3.6rem;
   }
 }
-@media screen and (max-width: 640px) {/* 640px以下*/
+@media screen and (max-width: 640px) {
   .numbers_card{
-      font-size: 2.4rem;/* 24px*/
+      font-size: 2.4rem;
   }
 }
