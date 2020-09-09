@@ -5,7 +5,7 @@
     <Overview />
     <Skill />
     <Masterpiece />
-    <Contact />
+    <!-- <Contact /> -->
     <Footer />
   </div>
 </template>

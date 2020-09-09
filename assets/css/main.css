@@ -263,16 +263,35 @@ html {
 }
 
 .skill {
-  height: 100vh;
-  font-weight: bold;
+  text-align: center;
+  transform:translate3d(0,0,0);
 }
 
-.skill_img_container {
-  position: relative;
+.parallax {
+  min-height: 300px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;    
+}
+
+.parallax.bg-01 {
+  background-image: url(~@/assets/img/riverbank.png);
+  height: auto;
+}
+
+.skill-container {
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
 }
 .skill_img {
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
 }
 
 .overview {
@@ -297,7 +316,7 @@ html {
 }
 
 .masterpiece {
-  min-height: 100vh;
+  min-height: 80vh;
   background-color: rgb(85,149,222);
   color: rgb(255, 255, 255);
 }
