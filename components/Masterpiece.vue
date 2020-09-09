@@ -1,14 +1,74 @@
 <template>
-  <div class='masterpiece'>
-    <div class='masterpiece_title'>
-      <h1>The Works</h1>
-    </div>
-    <div class='Ringo'>
-      <h2>Ringo</h2>
-      <p>Ringo is an application that allows you to talk to Ringo Shiina on LINE.</p>
-      <p>It can be achieved by using Ruby on Rails and LINE API.</p>
-    </div>
+  <div class="masterpiece">
+    <section id="second">
+      <div class="bg">
+        <div />
+      </div>
+    </section>
   </div>
 </template>
 
-<style src='assets/css/main.css' />
+<script>
+import Vue from "vue";
+
+export default {
+  data() {
+    return {
+      positionY: 0,
+      positions: {
+        second: 0,
+      },
+    };
+  },
+  watch: {
+    positionY(to, from) {
+      const scrollOffset = to + 50;
+      let el;
+
+      if (this.positions.second <= scrollOffset) {
+        el = document.getElementById("second");
+        el.setAttribute("class", "animation");
+      }
+    },
+  },
+  mounted() {
+    window.addEventListener("scroll", this.checkScroll);
+
+    this.positions = {
+      second: document.getElementById("second").getBoundingClientRect().top,
+    };
+
+    this.positionY++;
+  },
+  methods: {
+    checkScroll() {
+      this.positionY = window.scrollY ? window.scrollY : window.pageYOffset;
+    },
+  },
+};
+</script>
+
+<style lang="scss" scoped>
+#second {
+  > .bg {
+    width: 100%;
+    height: 100%;
+
+    div {
+      width: 100%;
+      height: 200px;
+      background: linear-gradient(269.76deg, #1f3345 0%, #333a56 100.52%);
+      transition: all 3s cubic-bezier(0.215, 0.61, 0.355, 1);
+      display: block;
+    }
+  }
+  &.animation {
+    > .bg {
+      div {
+        width: 20% !important;
+        display: block;
+      }
+    }
+  }
+}
+</style>
