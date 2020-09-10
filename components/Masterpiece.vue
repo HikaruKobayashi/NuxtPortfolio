@@ -1,9 +1,9 @@
 <template>
   <div class="masterpiece">
     <section id="second">
-      <div class="bg">
+      <!-- <div class="bg">
         <div />
-      </div>
+      </div> -->
       <div>
         <h2>Money Hub</h2>
         <p>Money Hub is a household account book application that makes money in and out simpler.</p>

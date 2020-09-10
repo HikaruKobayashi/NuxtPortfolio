@@ -7,7 +7,7 @@
       <p>I have an internship experience developing with Ruby on Rails and Docker.</p>
       <p>I want to continue improving my skill level.</p>
     </div>
-    <div class='skill-container parallax bg-01'></div>
+    <div class='parallax bg-01'></div>
   </div>
 </template>
 
