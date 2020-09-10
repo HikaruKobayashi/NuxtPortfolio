@@ -10,21 +10,21 @@
   </div>
 </template>
 
-<style src='assets/css/main.css' />
-
 <script>
 export default {
   methods: {
     handleScroll: function(evt, el) {
       console.log(window.scrollY);
-      if (window.scrollY > 50) {
+      if (window.scrollY > 300) {
         el.setAttribute(
           "style",
           "opacity: 1; transform: translate3d(0, -10px, 0)"
         )
       }
-      return window.scrollY > 100;
+      return window.scrollY > 300;
     }
   }
 }
 </script>
+
+<style src='assets/css/main.css' />

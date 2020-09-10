@@ -1,9 +1,11 @@
 <template>
   <div class="masterpiece">
-    <section id="second">
-      <!-- <div class="bg">
-        <div />
-      </div> -->
+    <section>
+      <div id="second">
+        <div class="bg">
+          <div />
+        </div>
+      </div>
       <div>
         <h2>Money Hub</h2>
         <p>Money Hub is a household account book application that makes money in and out simpler.</p>
@@ -13,6 +15,11 @@
         <h2>Ringo</h2>
         <p>Ringo solves the worries of anyone who wants to do LINE with an entertainer.</p>
         <p>I realized LINE with my beloved Ms.Ringo Shiina with this application.</p>
+      </div>
+      <div id="second">
+        <div class="bg">
+          <div />
+        </div>
       </div>
     </section>
   </div>
@@ -32,7 +39,7 @@ export default {
   },
   watch: {
     positionY(to, from) {
-      const scrollOffset = to + 50;
+      const scrollOffset = to + 300;
       let el;
 
       if (this.positions.second <= scrollOffset) {

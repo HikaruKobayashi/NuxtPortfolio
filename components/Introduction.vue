@@ -22,14 +22,12 @@
   </div>
 </template>
 
-<style src='assets/css/main.css' />
-
 <script>
 export default {
   methods: {
     handleScrollFadeOut: function(evt, el) {
       console.log(window.scrollY);
-      if (window.scrollY > 50) {
+      if (window.scrollY > 100) {
         el.setAttribute(
           "style",
           "opacity: 0; transform: translate3d(0, -10px, 0)"
@@ -40,3 +38,5 @@ export default {
   }
 }
 </script>
+
+<style src='assets/css/main.css' />
