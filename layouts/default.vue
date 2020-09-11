@@ -5,8 +5,6 @@
     <Overview />
     <Skill />
     <Masterpiece />
-    <Contact />
-    <Footer />
   </div>
 </template>
 
@@ -16,8 +14,6 @@ import Introduction from '~/components/Introduction.vue'
 import Overview     from '~/components/Overview.vue'
 import Skill        from '~/components/Skill.vue'
 import Masterpiece  from '~/components/Skill.vue'
-import Contact      from '~/components/Contact.vue'
-import Footer       from '~/components/Footer.vue'
 
 export default {
   name: 'sample',
