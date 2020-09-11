@@ -63,5 +63,8 @@ export default {
   */
   build: {
     extractCSS: true
-  }
+  },
+  loading: [
+    '~/components/Loading.vue',
+  ]
 }
