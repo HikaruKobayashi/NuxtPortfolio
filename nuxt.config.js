@@ -24,7 +24,12 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    ],
+    script: [
+      {
+        src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'
+      }
+    ],
   },
   /*
   ** Global CSS
@@ -37,8 +42,10 @@ export default {
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
-    '~/plugins/vue-scrollto',
-    '~/plugins/scroll.js',
+    {src: '~/plugins/vue-scrollto'},
+    {src: '~/plugins/scroll'},
+    {src: '~/plugins/aos'},
+
   ],
   /*
   ** Auto import components
@@ -63,8 +70,5 @@ export default {
   */
   build: {
     extractCSS: true
-  },
-  loading: [
-    '~/components/Loading.vue',
-  ]
+  }
 }
