@@ -1,42 +1,24 @@
 <template>
-  <div class="p-contact contact">
-    <form class="p-contact__form contact_form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" @submit.prevent="onSubmit" :class="sendingClass">
-      <input type="hidden" name="form-name" value="contact">
-
-      <div class="p-contact__item">
-        <label for="username">お名前</label>
-        <br>
-        <input type="text" id="username" name="username" v-model="username" autocomplete="name">
-      </div>
-
-      <div class="p-contact__item">
-        <label for="katakana">フリガナ</label>
-        <br>
-        <input type="text" id="katakana" name="katakana" v-model="katakana">
-      </div>
-
-      <div class="p-contact__item">
-        <label for="useremail">メールアドレス</label>
-        <br>
-        <input type="text" id="useremail" name="useremail" v-model="useremail" autocomplete="email">
-      </div>
-
-      <div class="p-contact__item">
-        <label for="message">お問い合わせ内容</label>
-        <br>
-        <textarea id="message" name="message" v-model="message"></textarea>
-      </div>
-
-      <div class="p-contact__item" v-show="false">
-        <label for="message">スパムでない場合は空欄</label>
-        <input type="text" name="bot-field" v-model="botField"/>
-      </div>
-
-      <div class="p-contact__submit">
-        <button type="submit" class='btn btn-dark'>送信</button>
-      </div>
-    </form>
-  </div>
+  <form name="contact" method="POST" data-aos='fade-up' class='contact' netlify>
+    <p>
+      <label>Your Name: <input type="text" name="name" /></label>   
+    </p>
+    <p>
+      <label>Your Email: <input type="email" name="email" /></label>
+    </p>
+    <p>
+      <label>Your Role: <select name="role[]" multiple>
+        <option value="leader">Leader</option>
+        <option value="follower">Follower</option>
+      </select></label>
+    </p>
+    <p>
+      <label>Message: <textarea name="message"></textarea></label>
+    </p>
+    <p>
+      <button type="submit" class='btn btn-dark'>Send</button>
+    </p>
+  </form>
 </template>
 
 
