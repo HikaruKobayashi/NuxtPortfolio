@@ -44,7 +44,7 @@ export default {
   plugins: [
     {src: '~/plugins/vue-scrollto'},
     {src: '~/plugins/scroll'},
-    {src: '~/plugins/aos'},
+    {src: '~/plugins/aos', ssr: false},
 
   ],
   /*
