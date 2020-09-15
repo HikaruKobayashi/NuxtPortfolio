@@ -1,19 +1,30 @@
 <template>
-  <form id="contact" action="/" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
-    <input type="hidden" name="form-name" value="contact">
-    <p>
-      <label>Your Name: <input type="text" name="name" required="true"></label>   
-    </p>
-    <p>
-      <label>Your Email: <input type="email" name="email" required="true"></label>
-    </p>
-    <p>
-      <label>Message: <textarea name="message" required="true"></textarea></label>
-    </p>
-    <p>
+  <div>
+    <form v-if="isSubmit === false" @submit.prevent="onSubmit">
+      <input type="hidden" name="form-name" value="contact">
+       <p>
+        <label>Your Name: <input type="text" v-model="name" name="name" ></label>   
+      </p>
+      <p>
+        <label>Your Email: <input type="email" v-model="email" name="email"></label>
+      </p>
+      <p>
+        <label>Message: <textarea v-model="message" name="message"></textarea></label>
+      </p>
+
       <button type="submit">Send</button>
-    </p>
-  </form>
+    </form>
+
+    <div v-if="isSubmit === true">
+      <p>Thank you.</p>
+    </div>
+
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <textarea name="message"></textarea>
+    </form>
+  </div>
 </template>
 
 <script>
@@ -35,7 +46,7 @@ export default {
       params.append('form-name', 'contact')
       params.append('name', this.name)
       params.append('email', this.email)
-      params.append('message', this.content)
+      params.append('message', this.message)
 
       axios
         .post('/', params)
