@@ -1,6 +1,6 @@
 <template>
   <div>
-    <form v-if="isSubmit === false" @submit.prevent="onSubmit">
+    <form name="contactform" netlify v-if="isSubmit === false" @submit.prevent="onSubmit">
       <input type="hidden" name="form-name" value="contact">
        <p>
         <label>Your Name: <input type="text" v-model="name" name="name" required="true"></label>   
