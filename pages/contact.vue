@@ -19,7 +19,7 @@
       <p>Thank you.</p>
     </div>
 
-    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+    <form name="contactform" netlify netlify-honeypot="bot-field" hidden>
       <input type="hidden" name="form-name" value="contact">
       <input type="text" name="name" />
       <input type="email" name="email" />
