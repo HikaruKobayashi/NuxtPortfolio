@@ -1,6 +1,6 @@
 <template>
   <client-only>
-  <form name="contact" method="POST">
+  <form id="contact" name="contact" method="POST" data-netlify="true">
     <input type="hidden" name="form-name" value="contact">
     <p>
       <label>Your Name: <input type="text" name="name"></label>   
@@ -17,3 +17,14 @@
   </form>
   </client-only>
 </template>
+
+<script>
+  $("#contact").submit(function(e) {
+    e.preventDefault();
+
+    var $form = $(this);
+    $.post($form.attr("action"), $form.serialize()).then(function() {
+      alert("Thank you!");
+    });
+  });
+</script>
