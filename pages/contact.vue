@@ -3,13 +3,13 @@
     <form v-if="isSubmit === false" @submit.prevent="onSubmit">
       <input type="hidden" name="form-name" value="contact">
        <p>
-        <label>Your Name: <input type="text" v-model="name" name="name" ></label>   
+        <label>Your Name: <input type="text" v-model="name" name="name" required="true"></label>   
       </p>
       <p>
-        <label>Your Email: <input type="email" v-model="email" name="email"></label>
+        <label>Your Email: <input type="email" v-model="email" name="email" required="true"></label>
       </p>
       <p>
-        <label>Message: <textarea v-model="message" name="message"></textarea></label>
+        <label>Message: <textarea v-model="message" name="message" required="true"></textarea></label>
       </p>
 
       <button type="submit">Send</button>
