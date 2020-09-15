@@ -1,60 +1,80 @@
 <template>
-  <div>
-    <form name="contactform" netlify v-if="isSubmit === false" @submit.prevent="onSubmit">
-      <input type="hidden" name="form-name" value="contact">
-       <p>
-        <label>Your Name: <input type="text" v-model="name" name="name" required="true"></label>   
-      </p>
-      <p>
-        <label>Your Email: <input type="email" v-model="email" name="email" required="true"></label>
-      </p>
-      <p>
-        <label>Message: <textarea v-model="message" name="message" required="true"></textarea></label>
-      </p>
-
-      <button type="submit">Send</button>
-    </form>
-
-    <div v-if="isSubmit === true">
-      <p>Thank you.</p>
-    </div>
-
-    <form name="contactform" netlify netlify-honeypot="bot-field" hidden>
-      <input type="hidden" name="form-name" value="contact">
-      <input type="text" name="name" />
-      <input type="email" name="email" />
-      <textarea name="message"></textarea>
-    </form>
-  </div>
+  <section class="contact-container">
+    <template v-if="!finished">
+      <form name="contact" method="POST" data-netlify="true" @submit.prevent>
+        <p>
+          <label>
+            お名前:
+            <input v-model="form.name" type="text" name="name" required="true" />
+          </label>
+        </p>
+        <p>
+          <label>
+            メールアドレス:
+            <input v-model="form.email" type="email" name="email" required="true" />
+          </label>
+        </p>
+        <p>
+          <label>
+            お問い合わせ内容:
+            <textarea id="form-content" v-model="form.content" name="content" required="true" />
+          </label>
+        </p>
+        <p>
+          <button @click="handleSubmit" v-text="'送信'" />
+        </p>
+      </form>
+    </template>
+    <template v-else>
+      <p v-text="'お問い合わせ頂きありがとうございました。'" />
+      <p><nuxt-link to="/" v-text="'TOPへ'" /></p>
+    </template>
+  </section>
 </template>
-
 <script>
 import axios from 'axios'
-
 export default {
   data() {
     return {
-      name: '',
-      email: '',
-      message: '',
-      isSubmit: false
+      form: {
+        name: '',
+        email: '',
+        content: ''
+      },
+      finished: false
     }
   },
   methods: {
-    onSubmit() {
-      const params = new URLSearchParams()
-
-      params.append('form-name', 'contact')
-      params.append('name', this.name)
-      params.append('email', this.email)
-      params.append('message', this.message)
-
+    encode(data) {
+      return Object.keys(data)
+        .map(
+          (key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
+        )
+        .join('&')
+    },
+    handleSubmit() {
+      const axiosConfig = {
+        header: { 'Content-Type': 'application/x-www-form-urlencoded' }
+      }
       axios
-        .post('/', params)
+        .post(
+          '/',
+          this.encode({
+            'form-name': 'contact',
+            ...this.form
+          }),
+          axiosConfig
+        )
         .then(() => {
-          this.isSubmit = true
+          this.finished = true
         })
     }
   }
 }
 </script>
+<style>
+.contact-container {
+  padding: 64px;
+  text-align: center;
+}
+</style>
