@@ -6,7 +6,7 @@
     <Skill />
     <Masterpiece />
 
-    <client-only>
+    <!-- <client-only>
       <form name="contact" method="POST" class='contact' data-netlify="true">
         <input type="hidden" name="form-name" value="contact" />
         <p>
@@ -28,7 +28,7 @@
           <button type="submit" class='btn btn-dark'>Send</button>
         </p>
       </form>
-    </client-only>
+    </client-only> -->
   </div>
 </template>
 
