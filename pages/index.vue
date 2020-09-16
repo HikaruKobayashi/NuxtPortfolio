@@ -6,29 +6,37 @@
     <Skill />
     <Masterpiece />
 
-    <!-- <client-only>
-      <form name="contact" method="POST" class='contact' data-netlify="true">
-        <input type="hidden" name="form-name" value="contact" />
-        <p>
-          <label>Your Name: <input type="text" name="name" /></label>
-        </p>
-        <p>
-          <label>Your Email: <input type="email" name="email" /></label>
-        </p>
-        <p>
-          <label>Your Role: <select name="role[]" multiple>
-            <option value="leader">Leader</option>
-            <option value="follower">Follower</option>
-          </select></label>
-        </p>
-        <p>
-          <label>Message: <textarea name="message"></textarea></label>
-        </p>
-        <p>
-          <button type="submit" class='btn btn-dark'>Send</button>
-        </p>
-      </form>
-    </client-only> -->
+    <section class="contact-container">
+      <template v-if="!finished">
+        <form name="contact" method="POST" data-netlify="true" @submit.prevent>
+          <p>
+            <label>
+              お名前:
+              <input v-model="form.name" type="text" name="name" required="true" />
+            </label>
+          </p>
+          <p>
+            <label>
+              メールアドレス:
+              <input v-model="form.email" type="email" name="email" required="true" />
+            </label>
+          </p>
+          <p>
+            <label>
+              お問い合わせ内容:
+              <textarea id="form-content" v-model="form.content" name="content" required="true" />
+            </label>
+          </p>
+          <p>
+            <button @click="handleSubmit" v-text="'送信'" />
+          </p>
+        </form>
+      </template>
+      <template v-else>
+        <p v-text="'お問い合わせ頂きありがとうございました。'" />
+        <p><nuxt-link to="/" v-text="'TOPへ'" /></p>
+      </template>
+    </section>
   </div>
 </template>
 
@@ -38,6 +46,7 @@ import Introduction from '~/components/Introduction.vue'
 import Overview     from '~/components/Overview.vue'
 import Skill        from '~/components/Skill.vue'
 import Masterpiece  from '~/components/Masterpiece.vue'
+import axios from 'axios'
 
 export default {
   components: {
@@ -47,6 +56,42 @@ export default {
     Skill,
     Masterpiece,
   },
+  data() {
+    return {
+      form: {
+        name: '',
+        email: '',
+        content: ''
+      },
+      finished: false
+    }
+  },
+  methods: {
+    encode(data) {
+      return Object.keys(data)
+        .map(
+          (key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
+        )
+        .join('&')
+    },
+    handleSubmit() {
+      const axiosConfig = {
+        header: { 'Content-Type': 'application/x-www-form-urlencoded' }
+      }
+      axios
+        .post(
+          '/',
+          this.encode({
+            'form-name': 'contact',
+            ...this.form
+          }),
+          axiosConfig
+        )
+        .then(() => {
+          this.finished = true
+        })
+    }
+  }
 }
 </script>
 
