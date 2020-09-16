@@ -28,7 +28,7 @@
             </label>
           </p>
           <p>
-            <button @click="handleSubmit" v-text="'送信'" />
+            <button @click="handleSubmit" v-text="'送信'" class="btn btn-dark" />
           </p>
         </form>
       </template>
