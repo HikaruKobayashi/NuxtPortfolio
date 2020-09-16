@@ -6,29 +6,29 @@
     <Skill />
     <Masterpiece />
 
-    <section class="contact-container">
+    <section class="contact-container" data-aos='fade-up'>
       <template v-if="!finished">
         <form name="contact" method="POST" data-netlify="true" @submit.prevent>
           <p>
             <label>
-              お名前:
-              <input v-model="form.name" type="text" name="name" required="true" />
+              Name
+              <input class="input-text" v-model="form.name" type="text" name="name" required="true" />
             </label>
           </p>
           <p>
             <label>
-              メールアドレス:
-              <input v-model="form.email" type="email" name="email" required="true" />
+              E-mail
+              <input class="input-text" v-model="form.email" type="email" name="email" required="true" />
             </label>
           </p>
           <p>
             <label>
-              お問い合わせ内容:
-              <textarea id="form-content" v-model="form.content" name="content" required="true" />
+              Message
+              <textarea class="input-text" id="form-content" v-model="form.content" name="content" required="true" />
             </label>
           </p>
           <p>
-            <button @click="handleSubmit" v-text="'送信'" class="btn btn-dark" />
+            <button @click="handleSubmit" v-text="'Send'" class="btn btn-dark" />
           </p>
         </form>
       </template>
