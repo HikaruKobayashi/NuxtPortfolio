@@ -21,6 +21,7 @@ $(document).ready(function() {
 <style>
   .introduction {
     height: 100vh;
+    position: relative;
   }
 
   .introduction_title {

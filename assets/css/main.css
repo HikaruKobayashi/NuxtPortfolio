@@ -62,6 +62,7 @@ html {
 #nav-drawer {
   position: relative;
   padding: 10px;
+  z-index: 9999;
 }
 
 .nav-unshown {
@@ -144,6 +145,7 @@ html {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   position: fixed;
+  z-index: 9999;
 }
 
 .button--green {
