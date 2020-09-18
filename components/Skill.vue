@@ -21,6 +21,7 @@
 
 <style>
   .parallax {
+    width: 100%;
     min-height: 300px;
     background-position: center top;
     background-repeat: no-repeat;
@@ -28,9 +29,25 @@
     background-size: cover;    
   }
 
+  .parallax::before {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    -webkit-transform: translate3d(0, 0, -1px);
+    transform: translate3d(0, 0, -1px);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
   .parallax_bg_img {
     background-image: url(~@/assets/img/riverbank.png);
-    max-height: 30%;
+  }
+  .parallax_bg_img::before {
+    background-image: url(~@/assets/img/riverbank.png);
   }
 
   .skill {
