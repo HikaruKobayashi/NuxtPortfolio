@@ -36,6 +36,7 @@
     background-color: rgb(41,41,48);
     color: rgb(255, 255, 255);
     text-align: center;
+    padding: 50px;
   }
 
   .masterpiece_title {

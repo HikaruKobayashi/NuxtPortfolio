@@ -95,4 +95,21 @@ export default {
 }
 </script>
 
-<style src='assets/css/main.css' />
+<style>
+  .contact-container {
+    padding: 64px;
+    text-align: center;
+  }
+
+  .input-text {
+    display: block;
+    width: 100%;
+    height: 36px;
+    border-width: 0 0 2px 0;
+    border-color: #000;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    outline: none;
+  }
+</style>

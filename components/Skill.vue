@@ -1,6 +1,6 @@
 <template>
   <div class='skill'>
-    <div data-aos='fade-up'>
+    <div class='skill_container' data-aos='fade-up'>
       <h1 class='skill_title'>My Skills</h1>
       <div class='skill_content'>
         <p>There aren't many techniques I can master.</p>
@@ -8,12 +8,12 @@
         <p>I have an internship experience developing with Ruby on Rails and Docker.</p>
         <p>I want to continue improving my skill level.</p>
       </div>
-    </div>
-    <div>
-      <img src='@/assets/img/landscape.jpg' class='skill_icon' data-aos='fade-up' />
-      <img src='@/assets/img/landscape.jpg' class='skill_icon' data-aos='fade-up' />
-      <img src='@/assets/img/landscape.jpg' class='skill_icon' data-aos='fade-up' />
-      <img src='@/assets/img/landscape.jpg' class='skill_icon' data-aos='fade-up' />
+      <div>
+        <img src='@/assets/img/landscape.jpg' class='skill_icon' data-aos='fade-up' />
+        <img src='@/assets/img/landscape.jpg' class='skill_icon' data-aos='fade-up' />
+        <img src='@/assets/img/landscape.jpg' class='skill_icon' data-aos='fade-up' />
+        <img src='@/assets/img/landscape.jpg' class='skill_icon' data-aos='fade-up' />
+      </div>
     </div>
     <div class='parallax parallax_bg_img'></div>
   </div>
@@ -54,6 +54,9 @@
     text-align: center;
   }
 
+  .skill_container {
+    padding: 50px;
+  }
   .skill_title {
     padding: 10px;
   }
