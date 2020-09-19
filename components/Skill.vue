@@ -9,10 +9,10 @@
         <p>I want to continue improving my skill level.</p>
       </div>
       <div>
-        <img src='@/assets/img/landscape.jpg' class='skill_icon' data-aos='fade-up' />
-        <img src='@/assets/img/landscape.jpg' class='skill_icon' data-aos='fade-up' />
-        <img src='@/assets/img/landscape.jpg' class='skill_icon' data-aos='fade-up' />
-        <img src='@/assets/img/landscape.jpg' class='skill_icon' data-aos='fade-up' />
+        <img src='@/assets/img/rails.png' class='skill_icon' data-aos='fade-up' />
+        <img src='@/assets/img/docker.png' class='skill_icon' data-aos='fade-up' />
+        <img src='@/assets/img/nuxt.png' class='skill_icon' data-aos='fade-up' />
+        <img src='@/assets/img/git-hub.png' class='skill_icon' data-aos='fade-up' />
       </div>
     </div>
     <div class='parallax parallax_bg_img'></div>
