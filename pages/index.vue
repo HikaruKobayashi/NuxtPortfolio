@@ -6,37 +6,40 @@
     <Skill />
     <Masterpiece />
 
-    <section class="contact-container" data-aos='fade-up'>
-      <template v-if="!finished">
-        <form name="contact" method="POST" data-netlify="true" @submit.prevent>
-          <p>
-            <label>
-              Name
-              <input class="input-text" v-model="form.name" type="text" name="name" required="true" />
-            </label>
-          </p>
-          <p>
-            <label>
-              E-mail
-              <input class="input-text" v-model="form.email" type="email" name="email" required="true" />
-            </label>
-          </p>
-          <p>
-            <label>
-              Message
-              <textarea class="input-text" id="form-content" v-model="form.content" name="content" required="true" />
-            </label>
-          </p>
-          <p>
-            <button @click="handleSubmit" v-text="'Send'" class="btn btn-dark" />
-          </p>
-        </form>
-      </template>
-      <template v-else>
-        <p v-text="'お問い合わせ頂きありがとうございました。'" />
-        <p><nuxt-link to="/" v-text="'TOPへ'" /></p>
-      </template>
-    </section>
+    <div class='contact_area'>
+      <h1 class='contact_title' data-aos='fade-up'>Contact</h1>
+      <section class="contact-container" data-aos='fade-up'>
+        <template v-if="!finished">
+          <form name="contact" method="POST" data-netlify="true" @submit.prevent>
+            <p>
+              <label>
+                Name
+                <input class="input-text" v-model="form.name" type="text" name="name" required="true" />
+              </label>
+            </p>
+            <p>
+              <label>
+                E-mail
+                <input class="input-text" v-model="form.email" type="email" name="email" required="true" />
+              </label>
+            </p>
+            <p>
+              <label>
+                Message
+                <textarea class="input-text" id="form-content" v-model="form.content" name="content" required="true" />
+              </label>
+            </p>
+            <p>
+              <button @click="handleSubmit" v-text="'Send'" class="btn btn-dark" />
+            </p>
+          </form>
+        </template>
+        <template v-else>
+          <p v-text="'お問い合わせ頂きありがとうございました。'" />
+          <p><nuxt-link to="/" v-text="'TOPへ'" /></p>
+        </template>
+      </section>
+    </div>
   </div>
 </template>
 
@@ -111,5 +114,12 @@ export default {
     line-height: 26px;
     font-weight: 400;
     outline: none;
+  }
+  .contact_area {
+    padding: 50px;
+    text-align: center;
+  }
+  .contact_title {
+    padding: 10px;
   }
 </style>
