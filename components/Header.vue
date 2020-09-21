@@ -7,6 +7,7 @@
       <div id="nav-content">
         <p>About Me</p>
         <p>Skill</p>
+        <p>Masterpiece</p>
         <p>Contact</p>
       </div>
     </div>
