@@ -42,7 +42,7 @@
     </div>
 
     <div class="Page-Btn" @click="scrollTop">
-      <fa class="fas fa-chevron-up Page-Btn-Icon" :icon="['fas', 'chrome']" area-hidden="true" />
+      <fa class="Page-Btn-Icon" :icon="['fas', 'chevron-up']" area-hidden="true" />
     </div>
   </div>
 </template>
