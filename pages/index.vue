@@ -42,7 +42,7 @@
     </div>
 
     <div class="Page-Btn" @click="scrollTop">
-      <i class="fas fa-chevron-up Page-Btn-Icon"></i>
+      <fa class="fas fa-chevron-up Page-Btn-Icon" :icon="['fas', 'chrome']" area-hidden="true" />
     </div>
   </div>
 </template>
@@ -97,6 +97,12 @@ export default {
         .then(() => {
           this.finished = true
         })
+    },
+    scrollTop: function() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
     }
   }
 }

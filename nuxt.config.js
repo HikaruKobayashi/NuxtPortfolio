@@ -36,6 +36,7 @@ export default {
   */
   css: [
     { src: '~/assets/sass/app.scss', lang: 'scss' },
+    { src: '@fortawesome/fontawesome-svg-core/styles.css' },
   ],
   /*
   ** Plugins to load before mounting the App
@@ -45,7 +46,7 @@ export default {
     {src: '~/plugins/vue-scrollto'},
     {src: '~/plugins/scroll'},
     {src: '~/plugins/aos', ssr: false},
-
+    {src: '@/plugins/fontawesome' },
   ],
   /*
   ** Auto import components
