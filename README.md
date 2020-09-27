@@ -1,4 +1,8 @@
-# hikaru
+# NuxtPortfolio
+
+## Use of Language
+- Nuxt.js
+- Netlify
 
 ## Build Setup
 
