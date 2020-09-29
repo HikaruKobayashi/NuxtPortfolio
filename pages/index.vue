@@ -137,12 +137,12 @@ export default {
     position: fixed;
     right: 14px;
     bottom: 14px;
-    width: 32px;
-    height: 32px;
-    line-height: 32px;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
     text-align: center;
     border-radius: 50%;
-    background: #5bc8ac;
+    background: rgb(49,59,94);
   }
 
   .Page-Btn-Icon{
