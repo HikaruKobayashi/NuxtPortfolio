@@ -6,7 +6,7 @@
     <Skill />
     <Masterpiece />
 
-    <div class='contact_area'>
+    <div class='contact_area' id='contact'>
       <h1 class='contact_title' data-aos='fade-up'>Contact</h1>
       <section class="contact-container" data-aos='fade-up'>
         <template v-if="!finished">

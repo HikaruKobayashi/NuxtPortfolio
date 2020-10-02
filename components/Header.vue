@@ -5,10 +5,10 @@
       <label id="nav-open" for="nav-input"><span></span></label>
       <label class="nav-unshown" id="nav-close" for="nav-input"></label>
       <div id="nav-content">
-        <p>About Me</p>
-        <p>Skill</p>
-        <p>Masterpiece</p>
-        <p>Contact</p>
+        <nuxt-link v-scroll-to="'#overview'" to>About Me</nuxt-link>
+        <nuxt-link v-scroll-to="'#skill'" to>Skill</nuxt-link>
+        <nuxt-link v-scroll-to="'#masterpiece'" to>Masterpiece</nuxt-link>
+        <nuxt-link v-scroll-to="'#contact'" to>Contact</nuxt-link>
       </div>
     </div>
   </div>

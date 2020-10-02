@@ -1,5 +1,5 @@
 <template>
-  <div class='overview'>
+  <div class='overview' id='overview'>
     <div class='overview_container' data-aos='fade-up'>
       <h1 class='overview_title'>Hikaru Kobayashi</h1>
       <div class='overview_content'>

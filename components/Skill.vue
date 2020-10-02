@@ -1,5 +1,5 @@
 <template>
-  <div class='skill'>
+  <div class='skill' id='skill'>
     <div class='skill_container' data-aos='fade-up'>
       <h1 class='skill_title'>My Skills</h1>
       <div class='skill_content'>

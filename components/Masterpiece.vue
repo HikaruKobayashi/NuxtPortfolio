@@ -1,5 +1,5 @@
 <template>
-  <div class="masterpiece">
+  <div class="masterpiece" id="masterpiece">
     <div data-aos='fade-up'>
       <h1 class='masterpiece_title'>Money Hub</h1>
       <div class='masterpiece_content'>
