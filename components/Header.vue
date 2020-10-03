@@ -5,10 +5,18 @@
       <label id="nav-open" for="nav-input"><span></span></label>
       <label class="nav-unshown" id="nav-close" for="nav-input"></label>
       <div id="nav-content">
-        <nuxt-link v-scroll-to="'#overview'" to>About Me</nuxt-link>
-        <nuxt-link v-scroll-to="'#skill'" to>Skill</nuxt-link>
-        <nuxt-link v-scroll-to="'#masterpiece'" to>Masterpiece</nuxt-link>
-        <nuxt-link v-scroll-to="'#contact'" to>Contact</nuxt-link>
+        <div>
+          <nuxt-link class='menu_link' v-scroll-to="'#overview'" to>About Me</nuxt-link>
+        </div>
+        <div>
+          <nuxt-link class='menu_link' v-scroll-to="'#skill'" to>Skill</nuxt-link>
+        </div>
+        <div>
+          <nuxt-link class='menu_link' v-scroll-to="'#masterpiece'" to>Masterpiece</nuxt-link>
+        </div>
+        <div>
+          <nuxt-link class='menu_link' v-scroll-to="'#contact'" to>Contact</nuxt-link>
+        </div>
       </div>
     </div>
   </div>
@@ -18,6 +26,11 @@
   .menu {
     list-style: none;
     padding: 0;
+  }
+
+  .menu_link, .menu_link:hover {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
   }
 
   #nav-drawer {
