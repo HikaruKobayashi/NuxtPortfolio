@@ -4,6 +4,7 @@
     <Introduction />
     <Overview />
     <Skill />
+    <Parallax />
     <Masterpiece />
 
     <div class='contact_area' id='contact'>
@@ -52,6 +53,7 @@ import Header       from '~/components/Header.vue'
 import Introduction from '~/components/Introduction.vue'
 import Overview     from '~/components/Overview.vue'
 import Skill        from '~/components/Skill.vue'
+import Parallax     from '~/components/Parallax.vue'
 import Masterpiece  from '~/components/Masterpiece.vue'
 import axios from 'axios'
 
@@ -61,6 +63,7 @@ export default {
     Introduction,
     Overview,
     Skill,
+    Parallax,
     Masterpiece,
   },
   data() {
@@ -128,6 +131,7 @@ export default {
   .contact_area {
     padding: 50px;
     text-align: center;
+    background-color: rgb(255,255,255);
   }
   .contact_title {
     padding: 10px;
