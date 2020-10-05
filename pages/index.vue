@@ -42,7 +42,7 @@
       </section>
     </div>
 
-    <div class="Page-Btn" @click="scrollTop">
+    <div class="Page-Btn" v-scroll-to="'#app'" to>
       <fa class="Page-Btn-Icon" :icon="['fas', 'chevron-up']" area-hidden="true" />
     </div>
   </div>
@@ -100,12 +100,6 @@ export default {
         .then(() => {
           this.finished = true
         })
-    },
-    scrollTop: function() {
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      });
     }
   }
 }
