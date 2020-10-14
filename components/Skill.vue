@@ -9,14 +9,32 @@
         <p>I want to continue improving my skill level.</p>
       </div>
       <div>
-        <img src='@/assets/img/rails.png' class='skill_icon' data-aos='fade-up' />
-        <img src='@/assets/img/docker.png' class='skill_icon' data-aos='fade-up' />
-        <img src='@/assets/img/nuxt.png' class='skill_icon' data-aos='fade-up' />
-        <img src='@/assets/img/git-hub.png' class='skill_icon' data-aos='fade-up' />
+        <img class='skill_icon' v-for="(skill, i) in skills" :key="i" :src="skill.link" data-aos='fade-up' />
       </div>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  data: () => ({
+    skills : [
+      {
+        link: require('@/assets/img/rails.png')
+      },
+      {
+        link: require('@/assets/img/docker.png')
+      },
+      {
+        link: require('@/assets/img/nuxt.png')
+      },
+      {
+        link: require('@/assets/img/git-hub.png')
+      }
+    ]
+  })
+}
+</script>
 
 <style>
   .skill {
