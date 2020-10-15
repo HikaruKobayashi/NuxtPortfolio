@@ -2,8 +2,8 @@
   <div class='introduction'>
     <div class="introduction_bg_img"></div>
     <div class='introduction_title'>
-      <h1>Portfolio</h1>
-      <span>This page is a my self-introduction site.</span>
+      <h1>{{ title }}</h1>
+      <span>{{ msg }}</span>
     </div>
   </div>
 </template>
@@ -16,6 +16,13 @@ $(document).ready(function() {
     }
   });
 });
+
+export default {
+  data: () => ({
+    title: 'Portfolio',
+    msg: 'This page is a my self-introduction site.',
+  })
+}
 </script>
 
 <style>
