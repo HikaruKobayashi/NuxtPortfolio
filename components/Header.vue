@@ -5,17 +5,17 @@
       <label id="nav-open" for="nav-input"><span></span></label>
       <label class="nav-unshown" id="nav-close" for="nav-input"></label>
       <div id="nav-content">
-        <div>
-          <nuxt-link class='menu_link' v-scroll-to="'#overview'" to>About Me</nuxt-link>
+        <div class="menu_border" v-scroll-to="'#overview'" to>
+          <div>About Me</div>
         </div>
-        <div>
-          <nuxt-link class='menu_link' v-scroll-to="'#skill'" to>Skill</nuxt-link>
+        <div class="menu_border" v-scroll-to="'#skill'" to>
+          <div>Skill</div>
         </div>
-        <div>
-          <nuxt-link class='menu_link' v-scroll-to="'#masterpiece'" to>Masterpiece</nuxt-link>
+        <div class="menu_border" v-scroll-to="'#masterpiece'" to>
+          <div>Masterpiece</div>
         </div>
-        <div>
-          <nuxt-link class='menu_link' v-scroll-to="'#contact'" to>Contact</nuxt-link>
+        <div class="menu_border" v-scroll-to="'#contact'" to>
+          <div>Contact</div>
         </div>
       </div>
     </div>
@@ -28,9 +28,11 @@
     padding: 0;
   }
 
-  .menu_link, .menu_link:hover {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
+  .menu_border {
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 5px;
+    margin: 15px 5px;
+    cursor: pointer;
   }
 
   #nav-drawer {
