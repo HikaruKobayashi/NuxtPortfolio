@@ -6,16 +6,16 @@
       <label class="nav-unshown" id="nav-close" for="nav-input"></label>
       <div id="nav-content">
         <div class="menu_border" v-scroll-to="'#overview'" to>
-          <div>About Me</div>
+          <div>About Me<fa :icon="['fas', 'arrow-right']" area-hidden="true" /></div>
         </div>
         <div class="menu_border" v-scroll-to="'#skill'" to>
-          <div>Skill</div>
+          <div>Skill<fa :icon="['fas', 'arrow-right']" area-hidden="true" /></div>
         </div>
         <div class="menu_border" v-scroll-to="'#masterpiece'" to>
-          <div>Masterpiece</div>
+          <div>Masterpiece<fa :icon="['fas', 'arrow-right']" area-hidden="true" /></div>
         </div>
         <div class="menu_border" v-scroll-to="'#contact'" to>
-          <div>Contact</div>
+          <div>Contact<fa :icon="['fas', 'arrow-right']" area-hidden="true" /></div>
         </div>
       </div>
     </div>
