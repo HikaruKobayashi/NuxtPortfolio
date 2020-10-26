@@ -29,7 +29,7 @@
   }
 
   .menu_border {
-    border: 1px solid rgba(0,0,0,.15);
+    border: 3px solid rgba(0,0,0,.15);
     border-radius: 5px;
     margin: 15px 5px;
     cursor: pointer;
