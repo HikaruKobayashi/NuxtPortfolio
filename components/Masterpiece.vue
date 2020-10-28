@@ -1,7 +1,7 @@
 <template>
   <div class="masterpiece" id="masterpiece">
-    <div data-aos='fade-up'>
-      <div class='masterpiece_content' v-for="(masterpiece, i) in masterpieces" :key="i" >
+    <div>
+      <div class='masterpiece_content' v-for="(masterpiece, i) in masterpieces" :key="i" data-aos='fade-up'>
         <h1 class='masterpiece_title'>{{ masterpiece.name }}</h1>
         <div class='masterpiece_content'>
           <p class='masterpiece_msg'>{{ masterpiece.desciption }}</p>
