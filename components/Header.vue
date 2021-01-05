@@ -1,57 +1,34 @@
 <template>
-  <div class='header-logo-menu menu'>
+  <section class='header-logo-menu menu'>
     <div id='nav-drawer'>
       <input  id="nav-input" type="checkbox" class="nav-unshown"/>
       <label id="nav-open" for="nav-input"><span></span></label>
       <label class="nav-unshown" id="nav-close" for="nav-input"></label>
       <div id="nav-content">
-        <div class="menu_border" v-scroll-to="'#overview'" to>
-          <div>About Me <fa :icon="['fas', 'arrow-right']" area-hidden="true" /></div>
-        </div>
-        <div class="menu_border" v-scroll-to="'#skill'" to>
-          <div>Skill <fa :icon="['fas', 'arrow-right']" area-hidden="true" /></div>
-        </div>
-        <div class="menu_border" v-scroll-to="'#masterpiece'" to>
-          <div>Masterpiece <fa :icon="['fas', 'arrow-right']" area-hidden="true" /></div>
-        </div>
-        <div class="menu_border" v-scroll-to="'#contact'" to>
-          <div>Contact <fa :icon="['fas', 'arrow-right']" area-hidden="true" /></div>
-        </div>
+        <p v-scroll-to="'#overview'" to>About Me</p>
+        <p v-scroll-to="'#skill'" to>Skill</p>
+        <p v-scroll-to="'#work'" to>Work</p>
+        <p v-scroll-to="'#contact'" to>Contact</p>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <style>
-  .menu {
-    list-style: none;
-    padding: 0;
-  }
-
-  .menu_border {
-    border: 3px solid rgba(0,0,0,.15);
-    border-radius: 5px;
-    margin: 15px 5px;
-    cursor: pointer;
-  }
-
   #nav-drawer {
     position: relative;
     padding: 10px;
     z-index: 9999;
   }
-
   .nav-unshown {
     display:none;
   }
-
   #nav-open {
     display: inline-block;
     width: 30px;
     height: 22px;
     vertical-align: middle;
   }
-
   #nav-open span, #nav-open span:before, #nav-open span:after {
     position: absolute;
     height: 3px;
@@ -124,7 +101,6 @@
     position: fixed;
     z-index: 9999;
   }
-
   .button--green {
     display: inline-block;
     border-radius: 4px;
@@ -133,12 +109,10 @@
     text-decoration: none;
     padding: 10px 30px;
   }
-
   .button--green:hover {
     color: #fff;
     background-color: #3b8070;
   }
-
   .button--grey {
     display: inline-block;
     border-radius: 4px;
@@ -148,12 +122,10 @@
     padding: 10px 30px;
     margin-left: 15px;
   }
-
   .button--grey:hover {
     color: #fff;
     background-color: #35495e;
   }
-
   .container {
     margin: 0 auto;
     min-height: 100vh;
