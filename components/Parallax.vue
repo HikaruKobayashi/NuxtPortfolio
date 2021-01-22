@@ -16,4 +16,19 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
+  @media screen and (max-width: 1000px) {
+    #parallax > .inner {
+      height: 50vh;
+    }
+  }
+  @media screen and (max-width: 750px) {
+    #parallax > .inner {
+      height: 40vh;
+    }
+  }
+  @media screen and (max-width : 599px) {
+    #parallax > .inner {
+      height: 30vh;
+    }
+  }
 </style>

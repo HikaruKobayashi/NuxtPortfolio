@@ -40,4 +40,21 @@ export default {
   #overview > .inner > p {
     font-size: 20px;
   }
+
+  /* Responsive */
+  @media screen and (max-width: 1000px) {
+    #overview > .inner {
+      width: 700px;
+    }
+  }
+  @media screen and (max-width: 750px) {
+    #overview > .inner {
+      width: 500px;
+    }
+  }
+  @media screen and (max-width : 599px) {
+    #overview > .inner {
+      width: 300px;
+    }
+  }
 </style>

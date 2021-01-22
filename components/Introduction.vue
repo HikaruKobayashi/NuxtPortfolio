@@ -31,4 +31,21 @@ export default {
     background: linear-gradient(rgb(52,62,98), rgb(24,26,41));
     padding: 100px 0;
   }
+
+  /* Responsive */
+  @media screen and (max-width: 1000px) {
+    #introduction > .inner {
+      width: 700px;
+    }
+  }
+  @media screen and (max-width: 750px) {
+    #introduction > .inner {
+      width: 500px;
+    }
+  }
+  @media screen and (max-width : 599px) {
+    #introduction > .inner {
+      width: 300px;
+    }
+  }
 </style>

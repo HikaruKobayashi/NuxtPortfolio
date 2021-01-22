@@ -86,4 +86,50 @@ export default {
   #work > .inner > ul > li > img:nth-child(1) {
     width: 400px;
   }
+
+  /* Responsive */
+  @media screen and (max-width: 1000px) {
+    #work > .inner {
+      width: 700px;
+    }
+    #work > .inner > ul {
+      padding: 0;
+    }
+    #work > .inner > ul > li {
+      flex-direction: column;
+      justify-content: center;
+    }
+    #work > .inner > ul > li > img {
+    padding-top: 40px;
+    }
+    #work > .inner > ul > li > img:nth-child(1) {
+      padding-bottom: 40px;
+    }
+  }
+  @media screen and (max-width: 750px) {
+    #work > .inner {
+      width: 500px;
+    }
+    #work > .inner > ul {
+      padding: 0;
+    }
+  }
+  @media screen and (max-width : 599px) {
+    #work > .inner {
+      width: 300px;
+    }
+    #work > .inner > ul {
+      padding: 0;
+    }
+    #work > .inner > ul > li > img {
+    width: 290px;
+    height: 100%;
+    padding-top: 40px;
+    }
+    #work > .inner > ul > li > img:nth-child(1) {
+      width: 270px;
+      padding-top: 0;
+      padding-bottom: 40px;
+    }
+  }
 </style>

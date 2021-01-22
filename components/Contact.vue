@@ -95,5 +95,20 @@ export default {
     outline: none;
   }
 
-
+  /* Responsive */
+  @media screen and (max-width: 1000px) {
+    #contact > .inner {
+      width: 700px;
+    }
+  }
+  @media screen and (max-width: 750px) {
+    #contact > .inner {
+      width: 500px;
+    }
+  }
+  @media screen and (max-width : 599px) {
+    #contact > .inner {
+      width: 300px;
+    }
+  }
 </style>

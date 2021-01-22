@@ -100,4 +100,42 @@ export default {
   #skill > .inner > ul > li > p {
     font-weight: bold;
   }
+
+  @media screen and (max-width: 1000px) {
+    #skill > .inner {
+      width: 700px;
+    }
+    #skill > .inner > ul > li {
+      width: 300px;
+    }
+  }
+  @media screen and (max-width: 750px) {
+    #skill > .inner {
+      width: 500px;
+    }
+    #skill > .inner > ul {
+      padding: 0;
+    }
+    #skill > .inner > ul > li {
+      width: 480px;
+    }
+    #skill > .inner > ul > li:nth-last-child(1), #skill > .inner > ul > li:nth-last-child(2) {
+      margin-bottom: 50px;
+    }
+  }
+  @media screen and (max-width : 599px) {
+    #skill > .inner {
+      width: 300px;
+      padding: 0;
+    }
+    #skill > .inner > ul {
+      padding: 0;
+    }
+    #skill > .inner > ul > li {
+      width: 290px;
+    }
+    #skill > .inner > ul > li:nth-last-child(1), #skill > .inner > ul > li:nth-last-child(2) {
+      margin-bottom: 50px;
+    }
+  }
 </style>
