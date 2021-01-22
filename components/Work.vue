@@ -115,6 +115,9 @@ export default {
     }
   }
   @media screen and (max-width : 599px) {
+    #work {
+      padding: 50px 0 50px 0;
+    }
     #work > .inner {
       width: 300px;
     }
@@ -122,14 +125,13 @@ export default {
       padding: 0;
     }
     #work > .inner > ul > li > img {
-    width: 290px;
-    height: 100%;
-    padding-top: 40px;
+      width: 290px;
+      height: 100%;
+      padding-top: 40px;
     }
     #work > .inner > ul > li > img:nth-child(1) {
       width: 270px;
       padding-top: 0;
-      padding-bottom: 40px;
     }
   }
 </style>

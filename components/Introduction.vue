@@ -44,6 +44,9 @@ export default {
     }
   }
   @media screen and (max-width : 599px) {
+    #introduction {
+      padding: 120px 0 120px 0;
+    }
     #introduction > .inner {
       width: 300px;
     }

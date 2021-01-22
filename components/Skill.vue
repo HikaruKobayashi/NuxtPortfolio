@@ -1,10 +1,10 @@
 <template>
   <section id="skill">
-    <h2>
+    <h2 data-aos='fade-up'>
       {{ title }}
     </h2>
     <div class="inner">
-      <p>{{ msg }}</p>
+      <p data-aos='fade-up'>{{ msg }}</p>
       <ul>
         <li v-for="(skill, i) in skills" :key="i" data-aos='fade-up'>
           <h3>{{ skill.title }}</h3>
@@ -71,10 +71,11 @@ export default {
     flex-wrap: wrap;
     justify-content: space-between;
     list-style: none;
+    padding: 0;
   }
   #skill > .inner > ul > li {
     width: 475px;
-    margin-bottom: 50px;
+    margin: 0 auto 20px auto;
     padding: 40px 60px;
     border: 1px solid rgb(230, 230, 230);
     background-size: contain;
@@ -113,9 +114,6 @@ export default {
     #skill > .inner {
       width: 500px;
     }
-    #skill > .inner > ul {
-      padding: 0;
-    }
     #skill > .inner > ul > li {
       width: 480px;
     }
@@ -125,17 +123,11 @@ export default {
   }
   @media screen and (max-width : 599px) {
     #skill > .inner {
-      width: 300px;
-      padding: 0;
-    }
-    #skill > .inner > ul {
+      width: 100%;
       padding: 0;
     }
     #skill > .inner > ul > li {
-      width: 290px;
-    }
-    #skill > .inner > ul > li:nth-last-child(1), #skill > .inner > ul > li:nth-last-child(2) {
-      margin-bottom: 50px;
+      width: 90%;
     }
   }
 </style>

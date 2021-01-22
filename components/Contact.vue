@@ -107,6 +107,9 @@ export default {
     }
   }
   @media screen and (max-width : 599px) {
+    #contact {
+      padding: 100px 0 100px 0;
+    }
     #contact > .inner {
       width: 300px;
     }
