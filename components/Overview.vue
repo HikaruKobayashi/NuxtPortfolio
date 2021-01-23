@@ -1,10 +1,10 @@
 <template>
   <section id="overview">
-    <h2>
+    <h2 data-aos="fade-up">
       {{ title }}
     </h2>
     <div class="inner">
-      <p>{{ msg }}</p>
+      <p data-aos="fade-up">{{ msg }}</p>
     </div>
   </section>
 </template>

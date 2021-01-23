@@ -8,7 +8,7 @@
       <ul>
         <li v-for="(skill, i) in skills" :key="i" data-aos='fade-up'>
           <h3>{{ skill.title }}</h3>
-          <p>{{ msg }}</p>
+          <p>{{ skill.content }}</p>
         </li>
       </ul>
     </div>
@@ -22,21 +22,52 @@ export default {
     skills : [
       {
         title: 'Ruby on Rails',
+        content: `
+                 Ruby is my favorite programming language.
+                 During my long-term internship with the framework, I was involved in service development using Ruby on Rails.
+                 Recently, it is often used as an API.
+                 `
       },
       {
         title: 'Vue',
+        content: `
+                 JavaScript is indispensable for me as a front-end engineer.
+                 Recently, I've been focusing on the framework Vue.js.
+                 The site you are looking at is created using Nuxt.js.
+                 I also want to try TypeScript.
+                 `
       },
       {
         title: 'React',
+        content: `
+                 Before I got hooked on Vue, I mainly studied React.
+                 Through React I understood the concept of components.
+                 I also enthusiastically developed native apps using React Native.
+                 `
       },
       {
         title: 'Docker',
+        content: `
+                 Docker has dramatically improved my development environment.
+                 I have had a significant decrease in computer performance due to the accumulation of unnecessary images.
+                 Be careful to delete images that you do not use regularly.
+                 `
       },
       {
         title: 'Firebase',
+        content: `
+                 My knowledge of Firebase is still poor.
+                 I have used Firestore, RDB, Hosting, etc.
+                 It seems that the day to master Firebase is still ahead, but I want to deepen my understanding every day.
+                 `
       },
       {
         title: 'Git',
+        content: `
+                 You can use the Git command to break a branch and work.
+                 I feel good when I commit diligently and push them all together.
+                 I'm addicted to growing grass.
+                 `
       }
     ],
     msg: `
@@ -87,12 +118,18 @@ export default {
     box-shadow: 0px 0px 16px -6px rgba(233,233,233,0.6);
   }
   #skill > .inner > ul > li:nth-child(2) {
-    background-image: url("../img/../assets/img/rails.png");
+    background-image: url("../img/../assets/img/vue.png");
   }
   #skill > .inner > ul > li:nth-child(3) {
-    background-image: url("../img/../assets/img/docker.png");
+    background-image: url("../img/../assets/img/react.png");
   }
   #skill > .inner > ul > li:nth-child(4) {
+    background-image: url("../img/../assets/img/docker.png");
+  }
+  #skill > .inner > ul > li:nth-child(5) {
+    background-image: url("../img/../assets/img/firebase.png");
+  }
+  #skill > .inner > ul > li:nth-child(6) {
     background-image: url("../img/../assets/img/git-hub.png");
   }
   #skill > .inner > ul > li:nth-last-child(1), #skill > .inner > ul > li:nth-last-child(2) {
@@ -128,6 +165,7 @@ export default {
     }
     #skill > .inner > ul > li {
       width: 90%;
+      background-position: center center;
     }
   }
 </style>

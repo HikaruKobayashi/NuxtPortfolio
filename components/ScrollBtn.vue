@@ -8,10 +8,10 @@
   .Page-Btn{
     position: fixed;
     right: 14px;
-    bottom: 14px;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
+    bottom: 22px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
     text-align: center;
     border-radius: 50%;
     background: linear-gradient(rgb(52,62,98), rgb(24,26,41));

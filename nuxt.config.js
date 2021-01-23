@@ -71,7 +71,11 @@ export default {
   ** See https://nuxtjs.org/api/configuration-build/
   */
   build: {
-    extractCSS: true
+    extractCSS: true,
+    babel: {
+      babelrc: false,
+      compact: false
+    }
   },
   generate: {
     fallback: true
