@@ -7,6 +7,8 @@
 <style>
   #parallax {
     width: 100%;
+    height: 60vh;
+    position: relative;
   }
   #parallax > .inner {
     height: 60vh;
@@ -15,6 +17,13 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+  }
+  #parallax > .inner::before {
+    width: 100%;
+    height: 60vh;
+    background: url(../assets/img/contact_bg.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
   }
   @media screen and (max-width: 1000px) {
     #parallax > .inner {
