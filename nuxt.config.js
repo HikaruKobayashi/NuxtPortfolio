@@ -46,6 +46,7 @@ export default {
     {src: '~/plugins/vue-scrollto'},
     {src: '~/plugins/scroll'},
     {src: '~/plugins/aos', ssr: false},
+    { src :'~/plugins/parallax.js', ssr: false },
     {src: '@/plugins/fontawesome' },
   ],
   /*
