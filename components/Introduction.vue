@@ -21,7 +21,7 @@ export default {
     width: 100%;
     padding: 200px 0 200px 0;
     text-align: center;
-    background: url(../assets/img/riverbank.png) no-repeat;
+    background: url(../assets/img/city.jpg) no-repeat;
     background-size: cover;
   }
   #introduction > .inner {

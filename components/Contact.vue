@@ -18,7 +18,7 @@
             Message
             <textarea class="input-text" id="form-content" v-model="form.content" name="content" required="true" />
           </p>
-          <button @click="handleSubmit" v-text="'Send'" class="btn btn-dark" />
+          <button @click="handleSubmit" v-text="'Send'" class="btn" />
         </form>
       </template>
       <template v-else>
@@ -75,8 +75,9 @@ export default {
 <style>
   #contact {
     width: 100%;
-    padding: 100px 0 150px 0;
+    padding: 50px 0 150px 0;
     text-align: center;
+    background-color: rgb(255, 255, 255);
   }
   #contact > .inner {
     width: 1000px;
@@ -94,6 +95,14 @@ export default {
     font-weight: 400;
     outline: none;
   }
+  .btn {
+    font-size: 20px;
+    color: #f3f3f3;
+    background: linear-gradient(rgb(52,62,98), rgb(24,26,41));
+    padding: 10px 60px;
+    border-radius: 50px;
+    text-decoration: none;
+  }
 
   /* Responsive */
   @media screen and (max-width: 1000px) {
@@ -108,7 +117,7 @@ export default {
   }
   @media screen and (max-width : 599px) {
     #contact {
-      padding: 100px 0 100px 0;
+      padding: 0 0 100px 0;
     }
     #contact > .inner {
       width: 300px;

@@ -3,9 +3,7 @@
     <Header />
     <Introduction />
     <Overview />
-    <Parallax />
     <Skill />
-    <Parallax />
     <Work />
     <Contact />
     <Footer />
@@ -22,7 +20,6 @@ import Work         from '~/components/Work.vue'
 import Contact      from '~/components/Contact.vue'
 import Footer       from '~/components/Footer.vue'
 import ScrollBtn    from '~/components/ScrollBtn.vue'
-import Parallax     from '~/components/Parallax.vue'
 import axios        from 'axios'
 
 export default {
@@ -35,7 +32,6 @@ export default {
     Contact,
     Footer,
     ScrollBtn,
-    Parallax
   }
 }
 </script>
