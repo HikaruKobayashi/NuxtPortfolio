@@ -84,7 +84,7 @@ export default {
     align-items: center;
     justify-content: center;
   }
-  #work > .inner > ul > li > .work_img, .mobile_img {
+  #work > .inner > ul > li > .work_img, #work > .inner > ul > li > .mobile_img {
     width: 60%;
     overflow: hidden;
     border: 1px solid rgb(230, 230, 230);
@@ -125,7 +125,7 @@ export default {
       margin-bottom: 100px;
       display: inline-block;
     }
-    #work > .inner > ul > li > .work_img {
+    #work > .inner > ul > li > .work_img, #work > .inner > ul > li > .mobile_img {
       width: 90%;
       margin: auto;
       border-radius: 20px;
@@ -134,10 +134,7 @@ export default {
       display: none;
     }
     #work > .inner > ul > li > .mobile_img {
-      width: 90%;
-      margin: auto;
-      border-radius: 20px;
-      display: flex;
+      display: inline-block;
     }
     #work > .inner > ul > li > div {
       width: 100%;
