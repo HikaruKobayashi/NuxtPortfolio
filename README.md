@@ -1,8 +1,7 @@
-# NuxtPortfolio
+# Self-introduction Site
 
 ## Use of Language
 - Nuxt.js
-- Netlify
 
 ## Build Setup
 
