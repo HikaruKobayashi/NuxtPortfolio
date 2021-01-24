@@ -1,5 +1,5 @@
 <template>
-  <section class='header-logo-menu menu'>
+  <header class='header-logo-menu menu'>
     <div id='nav-drawer'>
       <input  id="nav-input" type="checkbox" class="nav-unshown"/>
       <label id="nav-open" for="nav-input"><span></span></label>
@@ -11,7 +11,7 @@
         <p v-scroll-to="'#contact'" to>Contact</p>
       </div>
     </div>
-  </section>
+  </header>
 </template>
 
 <style>
@@ -34,7 +34,7 @@
     height: 3px;
     width: 25px;
     border-radius: 3px;
-    background: rgb(255, 255, 255);
+    background: rgb(17, 32, 63);
     display: block;
     content: '';
     cursor: pointer;
