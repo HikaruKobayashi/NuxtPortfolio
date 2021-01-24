@@ -47,7 +47,7 @@ export default {
       {
         title: 'Git',
         link: require('@/assets/img/git.jpg'),
-        content: `You can use the Git command to break a branch and work.I feel good when I commit diligently and push them all together.I'm addicted to growing grass.`
+        content: `I can use the Git command to break a branch and work.I feel good when I commit diligently and push them all together.I'm addicted to growing grass.`
       }
     ],
   })

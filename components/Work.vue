@@ -5,7 +5,7 @@
       <ul>
         <li>
           <div class="work_img">
-            <img src='@/assets/img/portfolio.png'>
+            <img src='@/assets/img/money.png'>
             <!-- <div>
               <p>{{ countNumber }}</p>
               <fa class="good_icon" :icon="['fas', 'heart']" area-hidden="true" @click="click_count_up" />
@@ -19,7 +19,7 @@
         </li>
         <li>
           <div class="mobile_img">
-            <img src='@/assets/img/portfolio.png'>
+            <img src='@/assets/img/ringo.jpg'>
           </div>
           <div>
             <h3>Ringo</h3>
@@ -27,12 +27,12 @@
             <a href="https://github.com/HikaruKobayashi/Ringo">Git Hub</a>
           </div>
           <div class="work_img pc_img">
-            <img src='@/assets/img/portfolio.png'>
+            <img src='@/assets/img/ringo.jpg'>
           </div>
         </li>
         <li>
           <div class="work_img">
-            <img src='@/assets/img/portfolio.png'>
+            <img src='@/assets/img/portfolio.jpg'>
           </div>
           <div>
             <h3>Self-introduction Site</h3>
@@ -138,6 +138,9 @@ export default {
     }
     #work > .inner > ul > li > div {
       width: 100%;
+    }
+    #work > .inner > ul > li > div > h3 {
+      margin-top: 30px;
     }
   }
 </style>
