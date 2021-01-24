@@ -81,6 +81,7 @@ export default {
     border: 1px solid rgb(250, 250, 250);
     box-shadow: 1.5rem 2.5rem 2rem -2rem hsl(200 50% 20% / 40%);
     border-radius: 10px;
+    overflow: hidden;
   }
   #skill > .inner > ul > li > div {
     width: 85%;

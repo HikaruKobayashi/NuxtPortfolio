@@ -5,7 +5,7 @@
       <label id="nav-open" for="nav-input"><span></span></label>
       <label class="nav-unshown" id="nav-close" for="nav-input"></label>
       <div id="nav-content">
-        <p v-scroll-to="'#overview'" to>About Me</p>
+        <p v-scroll-to="'#overview'" to>About</p>
         <p v-scroll-to="'#skill'" to>Skill</p>
         <p v-scroll-to="'#work'" to>Work</p>
         <p v-scroll-to="'#contact'" to>Contact</p>
@@ -74,6 +74,20 @@
     -webkit-transform: translateX(-105%);
     transform: translateX(-105%);
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #nav-content > p {
+    font-size: 20px;
+    padding: 10px 60px;
+    cursor: pointer;
+    border-radius: 50px;
+  }
+  #nav-content > p:hover {
+    color: #f3f3f3;
+    background: linear-gradient(rgb(52,62,98), rgb(24,26,41));
   }
 
   #nav-input:checked ~ #nav-close {
@@ -100,38 +114,5 @@
     -ms-flex-direction: row;
     position: fixed;
     z-index: 9999;
-  }
-  .button--green {
-    display: inline-block;
-    border-radius: 4px;
-    border: 1px solid #3b8070;
-    color: #3b8070;
-    text-decoration: none;
-    padding: 10px 30px;
-  }
-  .button--green:hover {
-    color: #fff;
-    background-color: #3b8070;
-  }
-  .button--grey {
-    display: inline-block;
-    border-radius: 4px;
-    border: 1px solid #35495e;
-    color: #35495e;
-    text-decoration: none;
-    padding: 10px 30px;
-    margin-left: 15px;
-  }
-  .button--grey:hover {
-    color: #fff;
-    background-color: #35495e;
-  }
-  .container {
-    margin: 0 auto;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
   }
 </style>
