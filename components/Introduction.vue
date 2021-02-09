@@ -1,7 +1,13 @@
 <template>
   <section id="introduction">
     <div class="inner">
-      <h1>{{ title }}</h1>
+      <h1
+        v-for="(t, index) in title"
+        :key="index"
+        class="item"
+        :style="{animationDelay: index*100+'ms'}"
+        v-text="t"
+      >{{ title }}</h1>
       <p>{{ msg }}</p>
     </div>
   </section>
@@ -30,6 +36,18 @@ export default {
     color: rgb(255, 255, 255);
     background: linear-gradient(rgb(52,62,98), rgb(24,26,41));
     padding: 100px 0;
+  }
+
+  @keyframes text-in {
+    0% {
+      transform: translate(0, -20px);
+      opacity: 0;
+    }
+  }
+  .item {
+    display: inline-block;
+    min-width: 0.3em;
+    animation: text-in .8s cubic-bezier(0.22, 0.15, 0.25, 1.43) 0s backwards;
   }
 
   /* Responsive */

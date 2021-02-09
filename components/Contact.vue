@@ -95,7 +95,7 @@ export default {
     font-weight: 400;
     outline: none;
   }
-  .btn {
+  .btn, .btn:hover {
     font-size: 20px;
     color: #f3f3f3;
     background: linear-gradient(rgb(52,62,98), rgb(24,26,41));
