@@ -7,37 +7,29 @@
   </section>
 </template>
 
-<style>
-  #overview {
-    width: 100%;
-    padding: 100px 0;
-    background-color: rgb(255, 255, 255);
-    text-align: center;
-  }
-  #overview > .inner {
-    width: 85%;
-    padding: 50px 0;
-    border: 1px solid rgb(235, 235, 235);
-    box-shadow: 1.5rem 2.5rem 2rem -2rem hsl(200 50% 20% / 40%);
-    border-radius: 50px;
-    margin: 0 auto;
-  }
-  #overview > .inner > p {
-    line-height: 40px;
-    font-size: 20px;
-  }
+<style lang="sass">
+#overview
+  width: 100%
+  padding: 100px 0
+  background-color: rgb(255, 255, 255)
+  text-align: center
+  .inner
+    width: 85%
+    padding: 50px 0
+    border: 1px solid rgb(235, 235, 235)
+    box-shadow: 1.5rem 2.5rem 2rem -2rem rgb(210,216,219)
+    border-radius: 50px
+    margin: 0 auto
+    p
+      line-height: 40px
+      font-size: 20px
 
-  /* Responsive */
-  @media (max-width: 600px) {
-    #overview {
-      padding: 50px 0;
-    }
-    #overview > .inner {
-      border-radius: 20px;
-    }
-    #overview > .inner > p {
-      line-height: 30px;
-      font-size: 16px;
-    }
-  }
+@media (max-width: 600px)
+  #overview 
+    padding: 50px 0
+    .inner
+      border-radius: 20px
+      p
+        line-height: 30px
+        font-size: 16px
 </style>

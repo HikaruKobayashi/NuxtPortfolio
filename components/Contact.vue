@@ -72,55 +72,46 @@ export default {
 }
 </script>
 
-<style>
-  #contact {
-    width: 100%;
-    padding: 50px 0 150px 0;
-    text-align: center;
-    background-color: rgb(255, 255, 255);
-  }
-  #contact > .inner {
-    width: 1000px;
-    margin: 0 auto;
-  }
+<style lang="sass">
+#contact
+  width: 100%
+  padding: 50px 0 150px 0
+  text-align: center
+  background-color: rgb(255, 255, 255)
+  .inner
+    width: 1000px
+    margin: 0 auto
 
-  .input-text {
-    display: block;
-    width: 100%;
-    height: 36px;
-    border-width: 0 0 2px 0;
-    border-color: #000;
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: 400;
-    outline: none;
-  }
-  .btn, .btn:hover {
-    font-size: 20px;
-    color: #f3f3f3;
-    background: linear-gradient(rgb(52,62,98), rgb(24,26,41));
-    padding: 10px 60px;
-    border-radius: 50px;
-    text-decoration: none;
-  }
+.input-text
+  display: block
+  width: 100%
+  height: 36px
+  border-width: 0 0 2px 0
+  border-color: #000
+  font-size: 18px
+  line-height: 26px
+  font-weight: 400
+  outline: none
 
-  /* Responsive */
-  @media screen and (max-width: 1000px) {
-    #contact > .inner {
-      width: 700px;
-    }
-  }
-  @media screen and (max-width: 750px) {
-    #contact > .inner {
-      width: 500px;
-    }
-  }
-  @media screen and (max-width : 599px) {
-    #contact {
-      padding: 0 0 100px 0;
-    }
-    #contact > .inner {
-      width: 300px;
-    }
-  }
+.btn, .btn:hover
+  font-size: 20px
+  color: #f3f3f3
+  background: linear-gradient(rgb(52,62,98), rgb(24,26,41))
+  padding: 10px 60px
+  border-radius: 50px
+  text-decoration: none
+
+@media screen and (max-width: 1000px)
+  #contact
+    .inner
+      width: 700px
+@media screen and (max-width: 750px)
+  #contact
+    .inner
+      width: 500px
+@media screen and (max-width : 599px)
+  #contact
+    padding: 0 0 100px 0
+    .inner
+      width: 300px
 </style>

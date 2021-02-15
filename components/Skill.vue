@@ -54,63 +54,56 @@ export default {
 }
 </script>
 
-<style>
-  #skill {
-    width: 100%;
-    padding: 100px 0;
-    text-align: center;
-    background-color: rgb(243, 243, 243);
-  }
-  #skill > .inner {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  #skill > .inner > p {
-    font-size: 20px;
-  }
-  #skill > .inner > ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-  }
-  #skill > .inner > ul > li {
-    width: 30%;
-    margin: 100px auto 0 auto;
-    background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(250, 250, 250);
-    box-shadow: 1.5rem 2.5rem 2rem -2rem hsl(200 50% 20% / 40%);
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  #skill > .inner > ul > li > div {
-    width: 85%;
-    margin: 0 auto;
-  }
-  #skill > .inner > ul > li > img {
-    width: 100%;
-    height: auto;
-  }
+<style lang="sass">
+#skill
+  width: 100%
+  padding: 100px 0
+  text-align: center
+  background-color: rgb(243, 243, 243)
+  .inner
+    max-width: 1200px
+    margin: 0 auto
+    p
+      font-size: 20px
+    ul
+      display: flex
+      flex-wrap: wrap
+      list-style: none
+      padding: 0
+      li
+        width: 30%
+        margin: 100px auto 0 auto
+        background-color: rgb(255, 255, 255)
+        border: 1px solid rgb(250, 250, 250)
+        box-shadow: 1.5rem 2.5rem 2rem -2rem rgb(210,216,219)
+        border-radius: 10px
+        overflow: hidden
+        div
+          width: 85%
+          margin: 0 auto
+        img
+          width: 100%
+          height: auto
 
-  /* Responsive */
-  @media (min-width: 1200px) {
-    #skill > .inner > ul > li:hover {
-      border: 1px solid rgb(253, 253, 253);
-      box-shadow: 0 1px 4px rgba(0,0,0,.2);
-      transform: translateY(3px);
-    }
-  }
-  @media (max-width: 800px) {
-    #skill {
-      padding: 50px 0;
-    }
-    #skill > .inner > ul > li {
-      width: 45%;
-    }
-  }
-  @media (max-width: 600px) {
-    #skill > .inner > ul > li {
-      width: 90%;
-    }
-  }
+@media (min-width: 1200px)
+  #skill
+    .inner
+      ul
+        li:hover
+          border: 1px solid rgb(253, 253, 253)
+          box-shadow: 0 1px 4px rgba(0,0,0,.2)
+          transform: translateY(3px)
+@media (max-width: 800px)
+  #skill
+    padding: 50px 0
+    .inner
+      ul
+        li
+          width: 45%
+@media (max-width: 600px)
+  #skill
+    .inner
+      ul
+        li 
+          width: 90%
 </style>

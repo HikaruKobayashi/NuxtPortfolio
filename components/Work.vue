@@ -63,84 +63,65 @@ export default {
 }
 </script>
 
-<style>
-  #work {
-    width: 100%;
-    text-align: center;
-    background-color: rgb(255, 255, 255);
-    padding: 100px 0;
-  }
-  #work > .inner {
-    max-width: 1400px;
-    margin: 50px auto 0 auto;
-  }
-  #work > .inner > ul {
-    padding-left: 0;
-  }
-  #work > .inner > ul > li {
-    margin-bottom: 150px;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  #work > .inner > ul > li > .work_img, #work > .inner > ul > li > .mobile_img {
-    width: 60%;
-    overflow: hidden;
-    border: 1px solid rgb(230, 230, 230);
-    box-shadow: 1.5rem 2.5rem 2rem -2rem hsl(200 50% 20% / 40%);
-    border-radius: 50px;
-  }
-  #work > .inner > ul > li > .mobile_img {
-    display: none;
-  }
-  #work > .inner > ul > li > div {
-    width: 30%;
-  }
-  #work > .inner > ul > li > div > p {
-    margin: 25px 0;
-  }
-  #work > .inner > ul > li > div > img {
-    width: 100%;
-  }
-  #work > .inner > ul > li > div > a {
-    font-size: 20px;
-    color: #f3f3f3;
-    background: linear-gradient(rgb(52,62,98), rgb(24,26,41));
-    padding: 10px 60px;
-    border-radius: 50px;
-    text-decoration: none;
-  }
-  /* .good_icon {
-    color: rgb(255, 0, 0);
-    cursor: pointer;
-  } */
-
-  /* Responsive */
-  @media (max-width: 600px) {
-    #work {
-      padding: 50px 0;
-    }
-    #work > .inner > ul > li {
-      margin-bottom: 100px;
-      display: inline-block;
-    }
-    #work > .inner > ul > li > .work_img, #work > .inner > ul > li > .mobile_img {
-      width: 90%;
-      margin: auto;
-      border-radius: 20px;
-    }
-    #work > .inner > ul > li > .pc_img {
-      display: none;
-    }
-    #work > .inner > ul > li > .mobile_img {
-      display: inline-block;
-    }
-    #work > .inner > ul > li > div {
-      width: 100%;
-    }
-    #work > .inner > ul > li > div > h3 {
-      margin-top: 30px;
-    }
-  }
+<style lang="sass">
+#work
+  width: 100%
+  text-align: center
+  background-color: rgb(255, 255, 255)
+  padding: 100px 0
+  .inner
+    max-width: 1400px
+    margin: 50px auto 0 auto
+    ul
+      padding-left: 0
+      li
+        margin-bottom: 150px
+        list-style: none
+        display: flex
+        align-items: center
+        justify-content: center
+        .work_img, .mobile_img
+          width: 60%
+          overflow: hidden
+          border: 1px solid rgb(230, 230, 230)
+          box-shadow: 1.5rem 2.5rem 2rem -2rem rgb(210,216,219)
+          border-radius: 50px
+        .mobile_img
+          display: none
+        div
+          width: 30%
+          p
+            margin: 25px 0
+          img
+            width: 100%
+          a
+            font-size: 20px
+            color: #f3f3f3
+            background: linear-gradient(rgb(52,62,98), rgb(24,26,41))
+            padding: 10px 60px
+            border-radius: 50px
+            text-decoration: none
+// .good_icon
+//   color: rgb(255, 0, 0)
+//   cursor: pointer
+@media (max-width: 600px)
+  #work
+    padding: 50px 0
+    .inner
+        ul
+          li
+            margin-bottom: 100px
+            display: inline-block
+            .work_img, .mobile_img
+              width: 90%
+              margin: auto
+              border-radius: 20px
+            .pc_img
+              display: none
+            .mobile_img
+              display: inline-block
+            div
+              width: 100%
+              h3
+                margin-top: 30px
 </style>
