@@ -33,7 +33,7 @@ export default {
     width: 1000px
     margin: 0 auto
     color: rgb(255, 255, 255)
-    background: linear-gradient(rgb(52,62,98), rgb(24,26,41))
+    // background: linear-gradient(rgb(52,62,98), rgb(24,26,41))
     padding: 100px 0
 
 .item
