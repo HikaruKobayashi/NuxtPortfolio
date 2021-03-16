@@ -40,6 +40,19 @@
             <a href="https://github.com/HikaruKobayashi/Self-introductionSite">Git Hub</a>
           </div>
         </li>
+        <li>
+          <div class="mobile_img">
+            <img src='@/assets/img/sns.jpg'>
+          </div>
+          <div>
+            <h3>SNS</h3>
+            <p>This site that I started to make, longing for Mark Zuckerberg</p>
+            <a href="https://github.com/HikaruKobayashi/SNS">Git Hub</a>
+          </div>
+          <div class="work_img pc_img">
+            <img src='@/assets/img/sns.jpg'>
+          </div>
+        </li>
       </ul>
     </div>
   </section>
