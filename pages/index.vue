@@ -5,7 +5,7 @@
     <Overview />
     <Skill />
     <Work />
-    <Contact />
+    <!-- <Contact /> -->
     <Footer />
     <ScrollBtn />
   </div>
@@ -17,7 +17,7 @@ import Introduction from '~/components/Introduction.vue'
 import Overview     from '~/components/Overview.vue'
 import Skill        from '~/components/Skill.vue'
 import Work         from '~/components/Work.vue'
-import Contact      from '~/components/Contact.vue'
+// import Contact      from '~/components/Contact.vue'
 import Footer       from '~/components/Footer.vue'
 import ScrollBtn    from '~/components/ScrollBtn.vue'
 import axios        from 'axios'
@@ -29,7 +29,7 @@ export default {
     Overview,
     Skill,
     Work,
-    Contact,
+    // Contact,
     Footer,
     ScrollBtn,
   }

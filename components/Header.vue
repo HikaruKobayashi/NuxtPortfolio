@@ -8,7 +8,7 @@
         <p v-scroll-to="'#overview'" to>About</p>
         <p v-scroll-to="'#skill'" to>Skill</p>
         <p v-scroll-to="'#work'" to>Work</p>
-        <p v-scroll-to="'#contact'" to>Contact</p>
+        <!-- <p v-scroll-to="'#contact'" to>Contact</p> -->
       </div>
     </div>
   </header>
