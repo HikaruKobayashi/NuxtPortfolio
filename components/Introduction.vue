@@ -17,12 +17,8 @@
 import { Component, Vue } from 'nuxt-property-decorator';
 @Component
 export default class introduction extends Vue {
-  get title(): string {
-    return 'Portfolio'
-  }
-  get msg(): string {
-    return 'This page is a my self-introduction site.'
-  }
+  title: string = 'Portfolio';
+  msg: string = 'This page is a my self-introduction site.'
 }
 </script>
 
