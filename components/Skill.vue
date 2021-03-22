@@ -15,42 +15,42 @@
   </section>
 </template>
 
-<script>
-export default {
-  data: () => ({
-    skills : [
-      {
-        title: 'Ruby on Rails',
-        link: require('@/assets/img/rails.jpg'),
-        content: `Ruby is my favorite programming language.During my long-term internship with the framework, I was involved in service development using Ruby on Rails.Recently, it is often used as an API.`
-      },
-      {
-        title: 'Vue',
-        link: require('@/assets/img/nuxt.jpg'),
-        content: `JavaScript is indispensable for me as a front-end engineer.Recently, I've been focusing on the framework Vue.js.The site you are looking at is created using Nuxt.js.I also want to try TypeScript.`
-      },
-      {
-        title: 'React',
-        link: require('@/assets/img/react.jpg'),
-        content: `Before I got hooked on Vue, I mainly studied React.Through React I understood the concept of components.I also enthusiastically developed native apps using React Native.`
-      },
-      {
-        title: 'Docker',
-        link: require('@/assets/img/docker.jpg'),
-        content: `Docker has dramatically improved my development environment.I have had a significant decrease in computer performance due to the accumulation of unnecessary images.Be careful to delete images that you do not use regularly.`
-      },
-      {
-        title: 'Firebase',
-        link: require('@/assets/img/firebase.jpg'),
-        content: `My knowledge of Firebase is still poor.I have used Firestore, RDB, Hosting, etc.It seems that the day to master Firebase is still ahead, but I want to deepen my understanding every day.`
-      },
-      {
-        title: 'Git',
-        link: require('@/assets/img/git.jpg'),
-        content: `I can use the Git command to break a branch and work.I feel good when I commit diligently and push them all together.I'm addicted to growing grass.`
-      }
-    ],
-  })
+<script lang="ts">
+import { Component, Vue } from 'nuxt-property-decorator';
+@Component
+export default class skill extends Vue {
+  skills: {title:string, link:string, content:string}[] = [
+    {
+      title : 'Ruby on Rails',
+      link: require('@/assets/img/rails.jpg'),
+      content: `Ruby is my favorite programming language.During my long-term internship with the framework, I was involved in service development using Ruby on Rails.Recently, it is often used as an API.`
+    },
+    {
+      title: 'Vue',
+      link: require('@/assets/img/nuxt.jpg'),
+      content: `JavaScript is indispensable for me as a front-end engineer.Recently, I've been focusing on the framework Vue.js.The site you are looking at is created using Nuxt.js.I also want to try TypeScript.`
+    },
+    {
+      title: 'React',
+      link: require('@/assets/img/react.jpg'),
+      content: `Before I got hooked on Vue, I mainly studied React.Through React I understood the concept of components.I also enthusiastically developed native apps using React Native.`
+    },
+    {
+      title: 'Docker',
+      link: require('@/assets/img/docker.jpg'),
+      content: `Docker has dramatically improved my development environment.I have had a significant decrease in computer performance due to the accumulation of unnecessary images.Be careful to delete images that you do not use regularly.`
+    },
+    {
+      title: 'Firebase',
+      link: require('@/assets/img/firebase.jpg'),
+      content: `My knowledge of Firebase is still poor.I have used Firestore, RDB, Hosting, etc.It seems that the day to master Firebase is still ahead, but I want to deepen my understanding every day.`
+    },
+    {
+      title: 'Git',
+      link: require('@/assets/img/git.jpg'),
+      content: `I can use the Git command to break a branch and work.I feel good when I commit diligently and push them all together.I'm addicted to growing grass.`
+    }
+  ]
 }
 </script>
 

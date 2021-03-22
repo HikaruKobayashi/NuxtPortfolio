@@ -13,12 +13,16 @@
   </section>
 </template>
 
-<script>
-export default {
-  data: () => ({
-    title: 'Portfolio',
-    msg: 'This page is a my self-introduction site.',
-  })
+<script lang="ts">
+import { Component, Vue } from 'nuxt-property-decorator';
+@Component
+export default class introduction extends Vue {
+  get title(): string {
+    return 'Portfolio'
+  }
+  get msg(): string {
+    return 'This page is a my self-introduction site.'
+  }
 }
 </script>
 

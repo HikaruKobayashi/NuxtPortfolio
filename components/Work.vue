@@ -58,24 +58,6 @@
   </section>
 </template>
 
-<script>
-import firebase from '@/plugins/firebase'
-export default {
-  data(){
-    return{
-      countNumber: 0
-    }
-  },
-  methods: {
-    click_count_up() {
-      this.countNumber++
-      let Ref = firebase.database().ref('count').child(`ringo`)
-      Ref.push({ number: this.countNumber })
-    }
-  }
-}
-</script>
-
 <style lang="sass">
 #work
   width: 100%
