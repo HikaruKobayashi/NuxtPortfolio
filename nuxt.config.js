@@ -46,7 +46,8 @@ export default {
     {src: '~/plugins/vue-scrollto'},
     {src: '~/plugins/scroll'},
     {src: '~/plugins/aos', ssr: false},
-    {src: '@/plugins/fontawesome' },
+    {src: '~/plugins/VueLoading', ssr: false},
+    {src: '~/plugins/fontawesome' },
   ],
   /*
   ** Auto import components
