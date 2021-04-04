@@ -58,7 +58,8 @@ export default {
   ** Nuxt.js dev-modules
   */
   buildModules: [
-    '@nuxt/typescript-build'
+    '@nuxt/typescript-build',
+    'nuxt-animejs'
   ],
   /*
   ** Nuxt.js modules
@@ -67,6 +68,7 @@ export default {
     // Doc: https://bootstrap-vue.js.org
     'bootstrap-vue/nuxt',
     '@nuxtjs/axios',
+    'nuxt-svg-loader'
   ],
   /*
   ** Build configuration
