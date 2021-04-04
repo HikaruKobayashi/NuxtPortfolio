@@ -6,8 +6,8 @@
         <li v-for="(skill, i) in skills" :key="i" data-aos='fade-up'>
           <img :src="skill.link" />
           <div>
-            <h3>{{ skill.title }}</h3>
-            <p>{{ skill.content }}</p>
+            <!-- <h3>{{ skill.title }}</h3> -->
+            <!-- <p>{{ skill.content }}</p> -->
           </div>
         </li>
       </ul>
