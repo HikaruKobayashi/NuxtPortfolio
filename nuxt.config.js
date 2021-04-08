@@ -59,7 +59,8 @@ export default {
   */
   buildModules: [
     '@nuxt/typescript-build',
-    'nuxt-animejs'
+    'nuxt-animejs',
+    '@nuxtjs/tailwindcss'
   ],
   /*
   ** Nuxt.js modules

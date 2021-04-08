@@ -54,7 +54,7 @@ export default class skill extends Vue {
 }
 </script>
 
-<style lang="sass">
+<style lang="sass" scoped>
 #skill
   width: 100%
   padding: 100px 0
