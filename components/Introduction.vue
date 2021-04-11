@@ -1,6 +1,6 @@
 <template>
   <section id="introduction">
-    <div class="inner text-center w-3/6 text-white mx-auto my-0">
+    <div class="inner text-center w-3/6 text-white mx-auto my-0 px-0 py-32">
       <h1
         v-for="(t, index) in title"
         :key="index"
@@ -28,8 +28,6 @@ export default class introduction extends Vue {
   padding: 200px 0
   background: url(../assets/img/city.jpg) no-repeat
   background-size: cover
-  .inner
-    padding: 100px 0
 .item
   min-width: 0.3em
   animation: text-in .8s cubic-bezier(0.22, 0.15, 0.25, 1.43) 0s backwards
