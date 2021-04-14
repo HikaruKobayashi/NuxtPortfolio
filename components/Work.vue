@@ -1,6 +1,6 @@
 <template>
   <section id="work">
-    <h2 data-aos="fade-up">Work</h2>
+    <h2 class="text-3xl" data-aos="fade-up">Work</h2>
     <div class="inner">
       <ul>
         <li>

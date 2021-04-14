@@ -1,7 +1,7 @@
 <template>
   <section id="skill">
-    <h2 data-aos='fade-up'>Skill</h2>
-    <div class="inner">
+    <div class="inner text-center mx-auto my-0 px-0" data-aos='fade-up'>
+      <h2 class="text-3xl">Skill</h2>
       <ul>
         <li v-for="(skill, i) in skills" :key="i" data-aos='fade-up'>
           <img :src="skill.link" />
@@ -58,13 +58,9 @@ export default class skill extends Vue {
 #skill
   width: 100%
   padding: 100px 0
-  text-align: center
   background-color: rgb(243, 243, 243)
   .inner
     max-width: 1200px
-    margin: 0 auto
-    p
-      font-size: 20px
     ul
       display: flex
       flex-wrap: wrap
